@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+
+		 <link rel="stylesheet" href="style/reset.css">
+		<link rel="stylesheet" href="style/style.css">
+	
+
+		<title> Lisa Gad'</title>
+	</head>
+
+
+
+	<body>
+			<header>
+					<ul>
+							<li id="all">
+								All
+							</li>
+
+							<li id="graphic">
+								Graphic design
+							</li>
+
+							<li id="photo">
+								Photo
+							</li>
+
+							<li id="html">
+								HTML
+							</li>
+
+							<li id="mess">
+								Mess
+							</li>
+
+							<li id="about">
+								About
+							</li>
+
+						<a href="index.html">
+							<li id="nom">
+								Lisa Gad'
+							</li>
+						</a>
+					</ul>
+				
+			</header>
+
+		<!-- Menu -->
+		<div id="conteneur">
+
+
+		<!-- Les projets -->
+
+			<div id="contenu">
+
+					<!-- ligne 1 -->
+					<aside class="box" id="prenom">
+						<h1> Lisa Gad' </h1>
+					</aside>
+
+					<figure>
+						<img src="images/chat.jpg" class="box">
+					</figure>
+
+					<aside class="box" id="info">
+						<h2> Informations </h2> <br> <p> Je m'appelle <strong> Lisa Gad' </strong> et je suis étudiante en DN MADE mention graphisme augmenté au lycée Jacques-Prévert. </p> 
+					</aside>
+
+					<aside class="box" id="contact">
+						<h2> Contact <h2> <br> <p> Mail, Instagram, Viméo, Linkedin </p> 
+					</aside>
+
+					<aside class="box" id="skills">
+						<h2> Skills <h2> <br> <p> Numérique, print, photographie, motiion design, HTML/CSS </p> 
+					</aside>
+
+					<!-- ligne 2 -->
+					<aside class="box" id="how">
+						<a href="howdidyouendup.html"> <h3> How did you end up ? </h3> </a>
+						<br> <p> [Jeu de société] [2024] [Travail de groupe] [Scolaire][Illustration] [Procreate]
+						<br> Création d'un jeu de société complet dans le cadre d'un Workshop Game Design </p>
+					</aside>
+
+					<figure>
+						<img src="images/test.jpg" class="box">
+					</figure>
+
+					<aside class="box" id="couv">
+						<h3> Couvertures Fictives </h3>
+						<br> <p> [Photographie] [2024] [scolaire] [Camera RAW] [Mise en page]
+						<br> Commande fictive de cover de magazine </p> 
+					</aside>
+
+					<aside class="box" id="vie">
+						<h3> Vie Citadine </h3>
+						<br> <p> [Croquis] [dessin traditionnel] [2023-24] [scolaire]
+						<br> Carnets de croquis réalisés au cours de mon année scolaire</p> 
+					</aside>
+
+					<aside class="box" id="plage">
+						<h3> Plage galactiques </h3>
+						<br> <p> [Photoshop] [2023] [Expérimentations] [Scolaire] 
+						<br> Expérimentations sur Photoshop dans le but de créer une planche de BD</p> 
+					</aside>
+
+					<!-- ligne 3 -->
+
+					<figure>
+						<img src="images/test2.jpg" class="box">
+					</figure>
+
+					<aside class="box" id="teaser">
+						<h3> Teaser JPO </h3>
+						<br> <p> [Vidéo] [After Effects] [Scolaire] [2023] [Motion Design] 
+						<br> Teaser pour établissement scolaire en motion design</p> 
+					</aside>
+
+			</div>
+
+				<!-- Pied de page --> 
+			<footer>
+					<aside class="footer">
+						<p> ©Lisa Gad'</p>
+					</aside>
+
+					<aside class="footer">
+						<p> Typo ...
+							<br> Typo ...
+							<br> Typo ...
+					</aside>
+			</footer>
+
+		<!-- fermeture de la div conteneur --> 
+		</div>
+
+
+
+
+			<!-- Partie en Java Script -->
+
+			<script src="js/jquery-3.6.4.min.js"></script>
+			<script src="js/jquery-ui.js"></script>
+		
+
+			<script type="text/javascript">
+
+			$("#graphic").click(function(){
+	        			  $("#couv").hide();
+	       			 });
+			$("#graphic").click(function(){
+	        			  $("#prenom").hide();
+	       			 });
+			$("#graphic").click(function(){
+	        			  $("#info").hide();
+	       			 });
+			$("#graphic").click(function(){
+	        			  $("#contact").hide();
+	       			 });
+			$("#graphic").click(function(){
+	        			  $("#skills").hide();
+	       			 });
+			$("#graphic").click(function(){
+	        			  $("#how").show();
+	       			 });
+			$("#graphic").click(function(){
+	        			  $("#vie").show();
+	       			 }); 
+			$("#graphic").click(function(){
+	        			  $("#plage").show();
+	       			 }); 
+			$("#graphic").click(function(){
+	        			  $("#teaser").show();
+	       			 }); 
+
+
+
+
+			$("#photo").click(function(){
+	        			  $("#how").hide();
+	       			 });
+			$("#photo").click(function(){
+	        			  $("#vie").hide();
+	       			 });
+			$("#photo").click(function(){
+	        			  $("#plage").hide();
+	       			 });
+			$("#photo").click(function(){
+	        			  $("#teaser").hide();
+	       			 });
+			$("#photo").click(function(){
+	        			  $("#prenom").hide();
+	       			 });
+			$("#photo").click(function(){
+	        			  $("#info").hide();
+	       			 });
+			$("#photo").click(function(){
+	        			  $("#contact").hide();
+	       			 });
+			$("#photo").click(function(){
+	        			  $("#skills").hide();
+	       			 });
+			$("#photo").click(function(){
+	        			  $("#couv").show();
+	       			 });  
+
+
+
+			$("#html").click(function(){
+	        			  $("#how").hide();
+	       			 });
+			$("#html").click(function(){
+	        			  $("#vie").hide();
+	       			 });
+			$("#html").click(function(){
+	        			  $("#plage").hide();
+	       			 });
+			$("#html").click(function(){
+	        			  $("#teaser").hide();
+	       			 });
+			$("#html").click(function(){
+	        			  $("#couv").hide();
+	       			 });
+			$("#html").click(function(){
+	        			  $("#prenom").hide();
+	       			 });
+			$("#html").click(function(){
+	        			  $("#info").hide();
+	       			 });
+			$("#html").click(function(){
+	        			  $("#contact").hide();
+	       			 });
+			$("#html").click(function(){
+	        			  $("#skills").hide();
+	       			 });
+
+
+
+			$("#mess").click(function(){
+	        			  $("#how").hide();
+	       			 });
+			$("#mess").click(function(){
+	        			  $("#vie").hide();
+	       			 });
+			$("#mess").click(function(){
+	        			  $("#plage").hide();
+	       			 });
+			$("#mess").click(function(){
+	        			  $("#teaser").hide();
+	       			 });
+			$("#mess").click(function(){
+	        			  $("#couv").hide();
+	       			 });
+			$("#mess").click(function(){
+	        			  $("#prenom").hide();
+	       			 });
+			$("#mess").click(function(){
+	        			  $("#info").hide();
+	       			 });
+			$("#mess").click(function(){
+	        			  $("#contact").hide();
+	       			 });
+			$("#mess").click(function(){
+	        			  $("#skills").hide();
+	       			 });
+
+
+
+
+			$("#about").click(function(){
+	        			  $("#how").hide();
+	       			 });
+			$("#about").click(function(){
+	        			  $("#vie").hide();
+	       			 });
+			$("#about").click(function(){
+	        			  $("#plage").hide();
+	       			 });
+			$("#about").click(function(){
+	        			  $("#teaser").hide();
+	       			 });
+			$("#about").click(function(){
+	        			  $("#couv").hide();
+	       			 });
+			$("#about").click(function(){
+	        			  $("#prenom").show();
+	       			 }); 
+			$("#about").click(function(){
+	        			  $("#info").show();
+	       			 }); 
+			$("#about").click(function(){
+	        			  $("#contact").show();
+	       			 }); 
+			$("#about").click(function(){
+	        			  $("#skills").show();
+	       			 }); 
+
+
+
+			$("#all").click(function(){
+	        			  $("#prenom").show();
+	       			 }); 
+			$("#all").click(function(){
+	        			  $("#info").show();
+	       			 }); 
+			$("#all").click(function(){
+	        			  $("#contact").show();
+	       			 }); 
+			$("#all").click(function(){
+	        			  $("#skills").show();
+	       			 }); 
+			$("#all").click(function(){
+	        			  $("#how").show();
+	       			 });
+			$("#all").click(function(){
+	        			  $("#couv").show();
+	       			 });  
+			$("#all").click(function(){
+	        			  $("#vie").show();
+	       			 }); 
+			$("#all").click(function(){
+	        			  $("#plage").show();
+	       			 }); 
+			$("#all").click(function(){
+	        			  $("#teaser").show();
+	       			 }); 
+
+
+			</script>
+	</body>
+
+</html>

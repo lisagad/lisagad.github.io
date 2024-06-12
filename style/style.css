@@ -1,0 +1,142 @@
+	/*_ _  _ ___  ____ _  _ 
+	| |\ | |  \ |___  \/  
+	| | \| |__/ |___ _/\_*/
+
+
+/* Général */
+body	{
+	 background-color: #370617;
+}
+
+a 	{
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Menu */
+
+header 	{
+	width: 88vw;
+	height: 30px;
+	border: 1px solid orange;
+	position: fixed;
+	top: 5px;
+	left: 6vw;	
+  background-color: white;
+}
+
+header ul	{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul li{	
+  font-size: 14px;
+}
+
+
+/*Fond*/
+#conteneur 	{
+	  width: 90vw;
+    margin: 90px auto;
+		margin: auto;
+	  background-color: whitesmoke;
+	  opacity: 0.8;
+	  position: relative;
+}
+
+/*Typo*/
+h1, h2, h3	{
+	font-size: 13px;
+	color: black;
+}
+
+p	{
+	font-size: 11px;
+	color: black;
+	line-height: 150%;
+}
+
+
+
+/* Les projets */
+#contenu 	{
+	width: 88vw;
+	/*height: 70px;*/
+	border: 1px solid yellow;
+	margin: auto;
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 50px;
+}
+
+.box {
+  height: 150px;
+/*  width: 240px;*/
+	width: 17vw;
+  border: 1px solid blueviolet;
+  display: inline-block;
+}
+
+
+/* Pied de page */
+footer	{
+	width: 88vw;
+	border: 1px solid green;
+	margin: auto;
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.footer	{
+	adding: 5px;
+	display: inline-block;
+	align-content: flex-start;
+	border: 1px solid red;
+}
+
+ /*__  __   ___   __    __   
+ ||  ||  // \\  ||    ||   
+ ||==|| ((   )) \\ /\ //   
+ ||  ||  \\_//   \V/\V/*/
+
+#pageprojet	{
+	width: 88vw;
+	border: 1px solid black;
+	margin: auto;
+	padding-top: 50px;
+}
+
+#presentation	{
+	width: 88vw;
+	border: 1px solid pink;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.texte 	{
+	width: 51vw;
+	border: 1px solid red;
+	margin: auto;
+}
+
+.mainpicture 	{
+	width: 34vw;
+	height: 300px;
+	border: 1px solid blue;
+	margin: auto;
+}
+
+#photosprojet	{
+	width: 88vw;
+	border: 1px solid purple;
+	margin: auto;
+}
+
+
+
