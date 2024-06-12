@@ -122,7 +122,7 @@ footer	{
 .texte 	{
 	width: 51vw;
 	border: 1px solid red;
-	margin: auto;
+/*	margin: auto;*/
 }
 
 .mainpicture 	{
@@ -136,6 +136,10 @@ footer	{
 	width: 88vw;
 	border: 1px solid purple;
 	margin: auto;
+}
+
+#photosprojet figure 	{
+	
 }
 
 
