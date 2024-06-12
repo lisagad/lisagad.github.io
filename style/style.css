@@ -48,12 +48,12 @@ header ul li{
 
 /*Typo*/
 h1, h2, h3	{
-	font-size: 13px;
+	font-size: 14px;
 	color: black;
 }
 
 p	{
-	font-size: 11px;
+	font-size: 12px;
 	color: black;
 	line-height: 150%;
 }
@@ -73,7 +73,7 @@ p	{
 }
 
 .box {
-  height: 150px;
+  height: 200px;
 /*  width: 240px;*/
 	width: 17vw;
   border: 1px solid blueviolet;
@@ -116,13 +116,20 @@ footer	{
 	border: 1px solid pink;
 	margin: auto;
 	display: flex;
-	align-items: flex-end;
+	align-items: flex-start;
 }
 
-.texte 	{
+.introduction 	{
 	width: 51vw;
 	border: 1px solid red;
 /*	margin: auto*/
+}
+
+.texte 	{
+	width: 17vw;
+	border: 1px solid red;
+/*	margin: auto*/
+	margin-right: 20px;
 }
 
 .mainpicture 	{
@@ -146,7 +153,7 @@ footer	{
 	width: 28vw;
 	height: 250 px;
 	border: 1px solid lightpink;
-	border-radius: 10px;
+/*	border-radius: 10px;*/
 }
 
 
