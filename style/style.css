@@ -13,7 +13,7 @@ a 	{
 	color: inherit;
 }
 
-/* Menu */
+/* Filtres */
 
 header 	{
 	width: 88vw;
@@ -95,6 +95,7 @@ footer	{
 }
 
 .footer	{
+	width: 17vw;
 	adding: 5px;
 	display: inline-block;
 	align-content: flex-start;
