@@ -1,6 +1,8 @@
-	/*_ _  _ ___  ____ _  _ 
-	| |\ | |  \ |___  \/  
-	| | \| |__/ |___ _/\_*/
+/*  _           _           
+		 _)_ __   __| | _____  __
+		| | '_ \ / _` |/ _ \ \/ /
+		| | | | | (_| |  __/>  < 
+		|_|_| |_|\__,_|\___/_/\_\*/
 
 
 /* Général */
@@ -51,7 +53,6 @@ header ul li{
 h1, h2, h3	{
 	font-size: 14px;
 	color: black;
-/*	text-transform: uppercase;*/
 }
 
 p	{
@@ -102,16 +103,17 @@ footer	{
 	border: 1px solid red;
 }
 
- /*__  __   ___   __    __   
- ||  ||  // \\  ||    ||   
- ||==|| ((   )) \\ /\ //   
- ||  ||  \\_//   \V/\V/*/
+                                           _      _   
+/*  _ __   __ _  __ _  ___   _ __  _ __ ___ (_) ___| |_ 
+ 		| '_ \ / _` |/ _` |/ _ \ | '_ \| '__/ _ \| |/ _ \ __|
+ 		| |_) | (_| | (_| |  __/ | |_) | | | (_) | |  __/ |_ 
+ 		| .__/ \__,_|\__, |\___| | .__/|_|  \___// |\___|\__|
+ 		|_|          |___/       |_|           |__/*/
 
 #pageprojet	{
 	width: 88vw;
 	border: 1px solid black;
 	margin: auto;
-	padding-top: 50px;
 }
 
 #presentation	{
@@ -120,6 +122,7 @@ footer	{
 	margin: auto;
 	display: flex;
 	align-items: flex-start;
+	padding-top: 50px;
 }
 
 .introduction 	{
