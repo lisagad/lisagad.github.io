@@ -121,8 +121,8 @@ h4	{
 	position: fixed;
 	top : 40vh;
 	left: 6vw;
-
 	font-size: 3em;
+	display: none;
 }
 
 
