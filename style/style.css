@@ -143,8 +143,9 @@ h4	{
 	width: 88vw;
 	border: 1px solid pink;
 	margin: auto;
+	justify-content: space-between;
 	display: flex;
-	align-items: space-between;
+	flex-wrap: wrap;
 	padding-top: 50px;
 }
 
@@ -173,14 +174,12 @@ h4	{
 	width: 34vw;
 	height: 330px;
 	border: 1px solid blue;
-	justify-content: flex-end;
 }
 
 .mainpicturepaysage 	{
-	width: 34vw;
-	height: 330px;
+	width: 23vw;
+	height: 530px;
 	border: 1px solid blue;
-	justify-content: flex-end;
 }
 
 .photosprojet	{
