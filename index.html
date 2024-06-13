@@ -80,6 +80,9 @@
 						<h2> Skills <h2> <br> <p> Numérique, print, photographie, motiion design, HTML/CSS </p> 
 					</aside>
 
+
+					
+
 					<!-- ligne 2 -->
 					<aside class="box" id="how">
 						<a href="howdidyouendup.html"> <h3> How did you end up ? </h3> </a>
@@ -128,7 +131,9 @@
 
 			</div>
 
-				<!-- Pied de page --> 
+
+
+<!-- Pied de page --> 
 			<footer>
 					<aside class="footer">
 						<p> ©Lisa Gad'</p>
@@ -145,6 +150,23 @@
 		</div>
 
 
+<!-- Titres caches -->
+
+<div id="titrehide">
+	<h4 id="titreprenom"> Lisa Gad' </h4>
+	<h4 id="titreinfo"> Informations </h4>
+	<h4 id="titrecontact"> Contact </h4>
+	<h4 id="titreskills"> Skills </h4>
+
+
+	<h4 id="titrehow"> How did you end up ? </h4>
+	<h4 id="titrecouv"> Couvertures fictives </h4>
+	<h4 id="titrevie"> Vie citadine </h4>
+	<h4 id="titreplage"> Plage galactiques </h4>
+	<h4 id="titreteaser"> Teaser JPO </h4>
+</div>
+
+
 
 
 			<!-- Partie en Java Script -->
@@ -154,6 +176,15 @@
 		
 
 			<script type="text/javascript">
+
+
+// Titres caches
+			$("#btnfictive").hover(function(){
+	        			  $("#fictive").show();
+	        			  $("#how").hide();
+	        			  $("#vie").hide();
+	       			 });
+
 
 
 // Graphic Design
