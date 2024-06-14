@@ -24,7 +24,7 @@ header 	{
 	position: fixed;
 	top: 5px;
 	left: 6vw;	
-  background-color: whitesmoke;
+  background-color: #ffffff;
   opacity: 0.7;
 }
 
@@ -44,7 +44,7 @@ header ul li{
 	  width: 90vw;
     margin: 90px auto;
 		margin: auto;
-	  background-color: whitesmoke;
+	  background-color: #ffffff;
 	  position: relative;
 	  min-height: 1000px;
 }
@@ -177,8 +177,8 @@ h4	{
 }
 
 .mainpicturepaysage 	{
-	width: 23vw;
-	height: 530px;
+	width: 17vw;
+	height: 400px;
 	border: 1px solid blue;
 }
 
