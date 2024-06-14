@@ -172,13 +172,13 @@ h4	{
 
 .mainpicture 	{
 	width: 34vw;
-	height: 330px;
+	height: 350px;
 	border: 1px solid blue;
 }
 
 .mainpicturepaysage 	{
 	width: 17vw;
-	height: 400px;
+	height: 390px;
 	border: 1px solid blue;
 }
 
@@ -200,7 +200,7 @@ h4	{
 
 .picturepaysage 	{
 	width: 17vw;
-	height: 370px;
+	height: 390px;
 	border: 1px solid lightpink;
 }
 
