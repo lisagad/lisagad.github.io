@@ -1,6 +1,6 @@
 body{
 /*	background-color: #38040e;*/
-	background-image: background.jpg;
+	background-image: url("../images/background.jpg");
 }
 
 /*	 __ _  ___ _ __   ___ _ __ __ _| |
@@ -177,7 +177,7 @@ h4	{
 	border: 1px solid blue;
 }
 
-.mainpicturepaysage 	{
+.mainpictureportrait 	{
 	width: 17vw;
 	height: 390px;
 	border: 1px solid blue;
@@ -199,7 +199,7 @@ h4	{
 	border: 1px solid lightpink;
 }
 
-.picturepaysage 	{
+.pictureportrait 	{
 	width: 17vw;
 	height: 390px;
 	border: 1px solid lightpink;
