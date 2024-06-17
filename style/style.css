@@ -42,7 +42,7 @@ header 	{
 	height: 30px;
 /*	border: 1px solid orange;*/
 	position: fixed;
-	top: 5px;
+	top: 20px;
 	left: 6vw;	
   background-color: #ffffff;
   opacity: 0.7;
@@ -101,7 +101,7 @@ p	{
 	justify-content: space-between;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 50px;
+	padding-top: 70px;
 }
 
 .box {
@@ -173,7 +173,7 @@ h4	{
 	justify-content: space-between;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 50px;
+	padding-top: 70px;
 }
 
 #presentationtxt	{
