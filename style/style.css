@@ -116,9 +116,10 @@ p	{
 /* Pied de page */
 footer	{
 	width: 88vw;
-/*	border: 1px solid green;*/
+/* 	border: 1px solid green;*/
 	margin: auto;
-
+	padding-top: 15px;
+	padding-bottom: 10px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
