@@ -1,3 +1,5 @@
+/*Fonts utilisées*/
+
 @font-face {
   font-family: 'GeneralSans-Regular';
   src: url('../fonts/GeneralSans-Regular.woff2') format('woff2'),
@@ -12,6 +14,7 @@
        url('../fonts/Quilon-Medium.ttf') format('truetype');
 }
 
+/*Arrière plan*/
 
 body{
 /*	background-color: #38040e;*/
@@ -67,7 +70,7 @@ header ul li{
 	  min-height: 1000px;
 }
 
-/*Typo*/
+/* Traitement du texte */
 h1, h2, h3	{
 	font-size: 14px;
 	color: black;
@@ -126,6 +129,7 @@ footer	{
 	display: inline-block;
 	align-content: flex-start;
 	border: 1px solid red;
+	text-align: center;
 }
 
 /*		  _   _ _                                  _               
