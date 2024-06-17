@@ -40,7 +40,7 @@ a 	{
 header 	{
 	width: 88vw;
 	height: 30px;
-	border: 1px solid orange;
+/*	border: 1px solid orange;*/
 	position: fixed;
 	top: 5px;
 	left: 6vw;	
@@ -96,7 +96,7 @@ p	{
 #contenu 	{
 	width: 88vw;
 	/*height: 70px;*/
-	border: 1px solid yellow;
+/*	border: 1px solid yellow;*/
 	margin: auto;
 	justify-content: space-between;
 	display: flex;
@@ -108,7 +108,7 @@ p	{
   height: 200px;
 /*  width: 240px;*/
 	width: 17vw;
-  border: 1px solid blueviolet;
+/*  border: 1px solid blueviolet;*/
   display: inline-block;
 }
 
@@ -116,7 +116,7 @@ p	{
 /* Pied de page */
 footer	{
 	width: 88vw;
-	border: 1px solid green;
+/*	border: 1px solid green;*/
 	margin: auto;
 
 	display: flex;
@@ -128,7 +128,7 @@ footer	{
 	width: 17vw;
 	display: inline-block;
 	align-content: flex-start;
-	border: 1px solid red;
+/*	border: 1px solid red;*/
 	text-align: center;
 }
 
@@ -140,7 +140,7 @@ footer	{
 
 h4	{
 	width: 88vw;
-	border: 1px solid blue;
+/*	border: 1px solid blue;*/
 	text-align: center;
 	position: fixed;
 	top : 40vh;
@@ -161,13 +161,13 @@ h4	{
 
 #pageprojet	{
 	width: 88vw;
-	border: 1px solid black;
+/*	border: 1px solid black;*/
 	margin: auto;
 }
 
 #presentation	{
 	width: 88vw;
-	border: 1px solid pink;
+/*	border: 1px solid pink;*/
 	margin: auto;
 	justify-content: space-between;
 	display: flex;
@@ -177,7 +177,7 @@ h4	{
 
 #presentationtxt	{
 	width: 88vw;
-	border: 1px solid pink;
+/*	border: 1px solid pink;*/
 	margin: auto;
 	display: flex;
 	align-items: flex-start;
@@ -185,32 +185,30 @@ h4	{
 
 .introduction 	{
 	width: 51vw;
-	border: 1px solid red;
-/*	margin: auto*/
+/*	border: 1px solid red;*/
 }
 
 .texte 	{
 	width: 17vw;
-	border: 1px solid red;
-/*	margin: auto*/
+/*	border: 1px solid red;*/
 	margin-right: 20px;
 }
 
 .mainpicture 	{
 	width: 34vw;
 	height: 350px;
-	border: 1px solid blue;
+/*	border: 1px solid blue;*/
 }
 
 .mainpictureportrait 	{
 	width: 17vw;
 	height: 390px;
-	border: 1px solid blue;
+/*	border: 1px solid blue;*/
 }
 
 .photosprojet	{
 	width: 88vw;
-	border: 1px solid purple;
+/*	border: 1px solid purple;*/
 	margin: auto;
 	justify-content: space-between;
 	display: flex;
@@ -221,13 +219,13 @@ h4	{
 .picture 	{
 	width: 28vw;
 	height: 250 px;
-	border: 1px solid lightpink;
+/*	border: 1px solid lightpink;*/
 }
 
 .pictureportrait 	{
 	width: 17vw;
 	height: 390px;
-	border: 1px solid lightpink;
+/*	border: 1px solid lightpink;*/
 }
 
 
