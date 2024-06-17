@@ -1,7 +1,23 @@
+@font-face {
+  font-family: 'GeneralSans-Regular';
+  src: url('../fonts/GeneralSans-Regular.woff2') format('woff2'),
+       url('../fonts/GeneralSans-Regular.woff') format('woff'),
+       url('../fonts/GeneralSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Quilon-Medium';
+  src: url('../fonts/Quilon-Medium.woff2') format('woff2'),
+       url('../fonts/Quilon-Medium.woff') format('woff'),
+       url('../fonts/Quilon-Medium.ttf') format('truetype');
+}
+
+
 body{
 /*	background-color: #38040e;*/
 	background-image: url("../images/background.jpg");
 }
+
 
 /*	 __ _  ___ _ __   ___ _ __ __ _| |
 	  / _` |/ _ \ '_ \ / _ \ '__/ _` | |
@@ -37,6 +53,7 @@ header ul	{
 
 header ul li{	
   font-size: 14px;
+  font-family: "GeneralSans-Regular"
 }
 
 
@@ -54,12 +71,14 @@ header ul li{
 h1, h2, h3	{
 	font-size: 14px;
 	color: black;
+	font-family: "Quilon-Medium";
 }
 
 p	{
 	font-size: 12px;
 	color: black;
 	line-height: 150%;
+	font-family: "GeneralSans-Regular";
 }
 
 
@@ -124,6 +143,8 @@ h4	{
 	left: 6vw;
 	font-size: 3em;
 	display: none;
+	font-family: "Quilon-Medium";
+	opacity: 0.3;
 }
 
 
