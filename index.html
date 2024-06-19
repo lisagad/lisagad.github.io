@@ -143,6 +143,14 @@
 						</aside>
 					</a>
 
+					<a href="catalogueartiste.html"> 
+						<aside class="box" id="catalogue">
+							<h3>Catalogue d'artiste</h3>
+							<br> <p>[School] [2024] [Edition] [Illustration]
+							<br>
+							<br>Catalogue that brings together my works</p> 
+						</aside>
+					</a>
 			</div>
 
 
@@ -181,12 +189,13 @@
 	<h4 id="titreplage"> Plage galactique </h4>
 	<h4 id="titreteaser"> Teaser JPO </h4>
 	<h4 id="titredonnees"> Données personnelles </h4>
+	<h4 id="titrecatalogue"> Catalogue d'artiste </h4>
 </div>
 
 
 
 
-			<!-- Partie en Java Script -->
+<!-- Partie en Java Script -->
 
 			<script src="js/jquery-3.6.4.min.js"></script>
 			<script src="js/jquery-ui.js"></script>
@@ -207,6 +216,7 @@
 	        			  $("#titreplage").hide();
 	        			  $("#titreteaser").hide();
 	        			  $("#titredonnees").hide();
+	        			  $("#titrecatalogue").hide();
 	       			 });
 
 			$("#info").hover(function(){
@@ -220,6 +230,7 @@
 	        			  $("#titreplage").hide();
 	        			  $("#titreteaser").hide();
 	        			  $("#titredonnees").hide();
+	        			  $("#titrecatalogue").hide();
 	       			 });
 
 			$("#contact").hover(function(){
@@ -233,6 +244,7 @@
 	        			  $("#titreplage").hide();
 	        			  $("#titreteaser").hide();
 	        			  $("#titredonnees").hide();
+	        			  $("#titrecatalogue").hide();
 	       			 });
 
 			$("#skills").hover(function(){
@@ -246,6 +258,7 @@
 	        			  $("#titreplage").hide();
 	        			  $("#titreteaser").hide();
 	        			  $("#titredonnees").hide();
+	        			  $("#titrecatalogue").hide();
 	       			 });
 
 			$("#how").hover(function(){
@@ -259,6 +272,7 @@
 	        			  $("#titreplage").hide();
 	        			  $("#titreteaser").hide();
 	        			  $("#titredonnees").hide();
+	        			  $("#titrecatalogue").hide();
 	       			 });
 
 			$("#couv").hover(function(){
@@ -272,6 +286,7 @@
 	        			  $("#titreplage").hide();
 	        			  $("#titreteaser").hide();
 	        			  $("#titredonnees").hide();
+	        			  $("#titrecatalogue").hide();
 	       			 });
 
 			$("#vie").hover(function(){
@@ -285,6 +300,7 @@
 	        			  $("#titreplage").hide();
 	        			  $("#titreteaser").hide();
 	        			  $("#titredonnees").hide();
+	        			  $("#titrecatalogue").hide();
 	       			 });
 
 			$("#plage").hover(function(){
@@ -298,6 +314,7 @@
 	        			  $("#titreprenom").hide();
 	        			  $("#titreteaser").hide();
 	        			  $("#titredonnees").hide();
+	        			  $("#titrecatalogue").hide();
 	       			 });
 
 			$("#teaser").hover(function(){
@@ -311,6 +328,7 @@
 	        			  $("#titreplage").hide();
 	        			  $("#titreprenom").hide();
 	        			  $("#titredonnees").hide();
+	        			  $("#titrecatalogue").hide();
 	       			 });
 
 			$("#donnees").hover(function(){
@@ -324,6 +342,21 @@
 	        			  $("#titreplage").hide();
 	        			  $("#titreprenom").hide();
 	        			  $("#titreteaser").hide();
+	        			  $("#titrecatalogue").hide();
+	       			 });
+
+			$("#catalogue").hover(function(){
+	        			  $("#titrecatalogue").show();
+	        			  $("#titreinfo").hide();
+	        			  $("#titrecontact").hide();
+	        			  $("#titreskills").hide();
+	        			  $("#titrehow").hide();
+	        			  $("#titrecouv").hide();
+	        			  $("#titrevie").hide();
+	        			  $("#titreplage").hide();
+	        			  $("#titreprenom").hide();
+	        			  $("#titreteaser").hide();
+	        			  $("#titredonnees").hide();
 	       			 });
 
 
@@ -340,6 +373,7 @@
 	        			  $("#titreplage").hide();
 	        			  $("#titreprenom").hide();
 	        			  $("#titredonnees").hide();
+	        			  $("#titrecatalogue").hide();
 	       			 });
 
 			$("#conteneur").hover(function(){
@@ -353,6 +387,7 @@
 	        			  $("#titreplage").hide();
 	        			  $("#titreprenom").hide();
 	        			  $("#titredonnees").hide();
+	        			  $("#titrecatalogue").hide();
 	       			 });
 
 
@@ -388,6 +423,9 @@
 			$("#graphic").click(function(){
 	        			  $("#donnees").show();
 	       			 });
+			$("#graphic").click(function(){
+	        			  $("#catalogue").show();
+	       			 });
 
 
 
@@ -418,6 +456,9 @@
 	       			 });
 			$("#photo").click(function(){
 	        			  $("#donnees").hide();
+	       			 });
+			$("#photo").click(function(){
+	        			  $("#catalogue").hide();
 	       			 });
 			$("#photo").click(function(){
 	        			  $("#couv").show();
@@ -455,6 +496,9 @@
 			$("#html").click(function(){
 	        			  $("#donnees").hide();
 	       			 });
+			$("#html").click(function(){
+	        			  $("#catalogue").hide();
+	       			 });
 
 
 // Mess
@@ -489,7 +533,9 @@
 			$("#mess").click(function(){
 	        			  $("#donnees").hide();
 	       			 });
-
+			$("#mess").click(function(){
+	        			  $("#catalogue").hide();
+	       			 });
 
 
 
@@ -511,6 +557,9 @@
 	       			 });
 			$("#about").click(function(){
 	        			  $("#donnees").hide();
+	       			 });
+			$("#about").click(function(){
+	        			  $("#catalogue").hide();
 	       			 });
 			$("#about").click(function(){
 	        			  $("#prenom").show();
@@ -557,6 +606,9 @@
 	       			 }); 
 			$("#all").click(function(){
 	        			  $("#donnees").show();
+	       			 });
+			$("#all").click(function(){
+	        			  $("#catalogue").show();
 	       			 });
 
 
