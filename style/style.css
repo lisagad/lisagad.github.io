@@ -56,7 +56,8 @@ header ul	{
 
 header ul li{	
   font-size: 14px;
-  font-family: "GeneralSans-Regular"
+  font-family: "GeneralSans-Regular";
+  cursor: pointer;
 }
 
 
@@ -95,13 +96,12 @@ p	{
 /* Les projets */
 #contenu 	{
 	width: 88vw;
-	/*height: 70px;*/
 /*	border: 1px solid yellow;*/
 	margin: auto;
 	justify-content: space-between;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 70px;
+	padding-top: 100px;
 }
 
 .box {
@@ -173,7 +173,7 @@ h4	{
 	justify-content: space-between;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 70px;
+	padding-top: 100px;
 }
 
 #presentationtxt	{
