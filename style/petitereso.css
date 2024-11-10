@@ -1,0 +1,656 @@
+
+
+/*GRILLE */
+
+.container  {
+  width: 93vw;
+  height: auto;
+/*  border: 3px solid darkred;*/
+
+  display: grid;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 60px;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-crows: repeat(5, 1fr);
+  grid-auto-rows: 1fr;
+  gap : 30px 10px;
+
+}
+
+.container p  {
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.container p, h1, h2, h3, h4, h5, h6  {
+  font-size: 14px;
+  line-height: 120%;
+}
+
+*{
+  transition: all 0.5s ease-out;
+}
+
+
+/*__________________________________________________________*/
+/*MENU / HEADER*/
+header {
+  width: 93vw;
+  height: 45px;
+/*  border: 1px solid orange;*/
+  position: fixed;
+  padding-left: 15px;
+  padding-right: 5px;
+  z-index: 1000; /* Cette propriété permet que mon menu soit toujours au-dessus de tout les éléments de ma page quand un utilisateur scroll. Assure-toi que cette valeur est plus élevée que celle des autres éléments */
+  background-color: #1d1e1c;
+}
+
+header ul {
+  display: flex;
+  justify-content: start;
+  gap: 4vw;
+  padding-top: 10px;
+}
+
+header ul li{ 
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.logo {
+  height: 23px;
+  width: auto;
+  padding-top: 2px;
+  margin-right: 20vw;
+}
+
+/*__________________________________________________________*/
+/*FOOTER*/
+footer {
+  width: 93vw;
+  height: auto;
+/*  border: 1px solid pink;*/
+  position: fixed;
+  bottom: 10px; /* Affiche le footer en bas de la page */
+  z-index: 1000; /* Assure que le footer reste au-dessus des autres éléments */
+  background-color: #1d1e1c;
+}
+
+footer ul {
+  display: flex;
+  justify-content: start;
+  gap: 5vw;
+}
+
+footer ul li {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+a:hover {
+  font-style: italic;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/*__________________________________________________________*/
+
+/*PROPRIÉTÉS DE MES ITEMS*/
+figure img {
+    width: 100%;
+    height: auto; /* Pour garder le ratio de l'image */
+    object-fit: cover; /* Pour que l'image remplisse exactement la taille définie sans déformation */
+}
+
+h2  {
+  padding-top: 5px;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+h2:hover {
+  font-size: 14px;
+  line-height: 120%;
+} 
+
+.accroche {
+  grid-column: 1 / 4;
+  grid-row: 1 / -1; /*Utiliser les valeurs négatives assurent que votre élément occupe toujours la même place peu importe les valeurs de votre grille, ex: dans le cas d'une grille dynamique*/
+/*  background-color: darkred;*/
+/*  border: 1px solid darkred;*/
+}
+
+.accroche p {
+  padding-top: 5%;
+  font-size: 2em;
+}
+
+
+
+
+.vie  {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+/*  background-color: green;*/
+}
+
+.donnees  {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+/*  background-color: white;*/
+}
+
+.reglement  {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+/*  background-color: orangered;*/
+}
+
+.catalogue  {
+  grid-column: 2 / 4;
+  grid-row: 4 / 5;
+/*  background-color: yellow;*/
+}
+
+.inauguration {
+  grid-column: 1 / 3;
+  grid-row: 5 / 6;
+/*  background-color: blueviolet;*/
+}
+
+.stenope  {
+  grid-column: 2 / 3;
+  grid-row: 6 / 7;
+/*  background-color: hotpink;*/
+}
+
+.vide {
+  grid-column: 1 / 4;
+  grid-row: 7 / 8;
+/*  background-color: hotpink;*/
+}
+
+
+/*
+       _                         _                _  
+      | |                  _    | |     _        | | 
+ _____| |__   ___  _   _ _| |_  | |__ _| |_ ____ | | 
+(____ |  _ \ / _ \| | | (_   _) |  _ (_   _)    \| | 
+/ ___ | |_) ) |_| | |_| | | |_ _| | | || |_| | | | | 
+\_____|____/ \___/|____/   \__|_)_| |_| \__)_|_|_|\_)
+
+*/
+
+/*Style pour ce qui concerne la page about.html*/
+
+
+.hey  {
+  grid-column: 1 / 4;
+  grid-row: 1 / -1; /*Utiliser les valeurs négatives assurent que votre élément occupe toujours la même place peu importe les valeurs de votre grille, ex: dans le cas d'une grille dynamique*/
+  padding-top: 5%;
+}
+
+.hey p  {
+  font-size: 2em;
+}
+
+
+.texte1 {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+.texte2 {
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+}
+
+.texte3 {
+  grid-column: 1 / 4;
+  grid-row: 4 / 5;
+}
+
+.etoile figure img  {
+ height: 150px;
+ width: auto;
+}
+
+.etoile {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+
+
+
+/*
+
+                  _                   _                _  
+                 (_)        _        | |     _        | | 
+ ____   ____ ___  _ _____ _| |_  ___ | |__ _| |_ ____ | | 
+|  _ \ / ___) _ \| | ___ (_   _)/___)|  _ (_   _)    \| | 
+| |_| | |  | |_| | | ____| | |_|___ || | | || |_| | | | | 
+|  __/|_|   \___/| |_____)  \__|___(_)_| |_| \__)_|_|_|\_)
+|_|            (__/
+
+*/
+
+/*Pour les pages projets*/
+
+
+
+
+/*_____________________________________________________________*/
+/*PROJET = VIE CITADINE*/
+
+/*PHRASE D'ACCROCHE*/
+.citation1  {
+  grid-column: 1 / 4;
+  grid-row: 1 / -1; /*Utiliser les valeurs négatives assurent que votre élément occupe toujours la même place peu importe les valeurs de votre grille, ex: dans le cas d'une grille dynamique*/
+  padding-top: 5%;
+}
+
+.citation1 p  {
+  font-size: 2em;
+}
+
+/*IMAGE*/
+.imgvie1  {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+
+.imgvie2  {
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+}
+
+.imgvie3  {
+  grid-column: 2 / 4;
+  grid-row: 6 / 7;
+}
+
+.imgvie4  {
+  grid-column: 2 / 4;
+  grid-row: 7 / 8;
+}
+
+/*TEXTE*/
+.vie1 {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+.vie2 {
+  grid-column: 2 / 4;
+  grid-row: 5 / 6;
+}
+
+
+/*PROJET SUIVANT*/
+.nextvie  {
+  grid-column: 3 / 4;
+  grid-row: 8 / 9;
+}
+
+.nextvie  p{
+  text-align: end;
+  padding-top: 0%;
+}
+
+
+/*_______________________________________________________________*/
+/*PROJET = DONNÉES PERSONNELLES*/
+
+/*IMAGES*/
+.imgdonnees1  {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.imgdonnees2  {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.imgdonnees3  {
+  grid-column: 2 / 3;
+  grid-row: 7 / 8;
+}
+
+.imgdonnees4  {
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+}
+
+.imgdonnees5  {
+  grid-column: 2 / 3;
+  grid-row: 6 / 7;
+}
+
+/*TEXTES*/
+.donnees1 {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+
+.donnees2 {
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+}
+
+.donnees3 {
+  grid-column: 1 / 2;
+  grid-row: 8 / 9;
+}
+
+
+/*PROJET SUIVANT*/
+.nextdonnees  {
+  grid-column: 3 / 4;
+  grid-row: 8 / 9;
+}
+
+.nextdonnees  p{
+  text-align: end;
+  padding-top: 0%;
+}
+
+*_______________________________________________________________*/
+/*PROJET = RÉGLEMENT GYMNASE*/
+
+/*IMAGES*/
+.imgreglement1  {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.imgreglement8  {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.imgreglement2  {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+}
+
+.imgreglement3  {
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+}
+
+.imgreglement4  {
+  grid-column: 1 / 2;
+  grid-row: 6 / 7;
+}
+
+.imgreglement5  {
+  grid-column: 2 / 3;
+  grid-row: 6 / 7;
+}
+
+.imgreglement6  {
+  grid-column: 1 / 2;
+  grid-row: 7 / 8;
+}
+
+.imgreglement7  {
+  grid-column: 2 / 3;
+  grid-row: 7 / 8;
+}
+
+/*TEXTES*/
+.reglement1 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.reglement2 {
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+}
+
+.reglement3 {
+  grid-column: 3 / 4;
+  grid-row: 5 / 6;
+}
+
+
+/*PROJET SUIVANT*/
+.nextreglement  {
+  grid-column: 3 / 4;
+  grid-row: 8 / 9;
+}
+
+.nextreglement  p{
+  text-align: end;
+  padding-top: 0%;
+}
+
+/*_______________________________________________________________*/
+/*PROJET = CATALOGUE D'ARTISTE*/
+
+/*IMAGES*/
+.imgcatalogue1  {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+.imgcatalogue2  {
+  grid-column: 2 / 4;
+  grid-row: 8 / 9;
+}
+
+.imgcatalogue3  {
+  grid-column: 2 / 4;
+  grid-row: 4 / 5;
+}
+
+.imgcatalogue4  {
+  grid-column: 2 / 4;
+  grid-row: 5 / 6;
+}
+
+.imgcatalogue5  {
+  grid-column: 2 / 4;
+  grid-row: 6 / 7;
+}
+
+.imgcatalogue6  {
+  grid-column: 2 / 4;
+  grid-row: 7 / 8;
+}
+
+/*TEXTES*/
+.catalogue1 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.catalogue2 {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+/*PROJET SUIVANT*/
+.nextcatalogue  {
+  grid-column: 2 / 4;
+  grid-row: 9 / 10;
+}
+
+.nextcatalogue  p{
+  text-align: end;
+}
+
+/*_______________________________________________________________*/
+/*PROJET = INAUGURATION*/
+
+/*IMAGES*/
+.imginauguration3 {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+.imginauguration1 {
+  grid-column: 2 / 4;
+  grid-row: 6 / 7;
+}
+
+.imginauguration2 {
+  grid-column: 2 / 4;
+  grid-row: 4 / 5;
+}
+
+.imginauguration4 {
+  grid-column: 2 / 4;
+  grid-row: 5 / 6;
+}
+
+/*TEXTES*/
+.inauguration1  {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.inauguration2  {
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+}
+
+.inauguration3  {
+  grid-column: 1 / 2;
+  grid-row: 7 / 8;
+}
+
+
+/*PROJET SUIVANT*/
+.nextinauguration {
+  grid-column: 3 / 4;
+  grid-row: 7 / 8;
+}
+
+.nextinauguration p{
+  text-align: end;
+  padding-top: 0%;
+}
+
+
+/*_______________________________________________________________*/
+/*PROJET = STENOPE*/
+
+/*IMAGES*/
+.imgstenope1  {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.imgstenope2  {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+}
+
+.imgstenope2 img  {
+  height: 200px;
+  width: auto;
+}
+
+.imgstenope3  {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.imgstenope3 img  {
+  height: 200px;
+  width: auto;
+}
+
+.imgstenope4  {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+/*TEXTES*/
+.stenope1 {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+
+.stenope2 {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+/*PROJET SUIVANT*/
+.nextstenope  {
+  grid-column: 3 / 4;
+  grid-row: 5 / 6;
+}
+
+.nextstenope  p{
+  text-align: end;
+  padding-top: 0%;
+}
+
+
+/*
+
+                           _                            _         _     _             _ 
+                          (_)                          | |       | |   | |           | |
+  _____  ___ __   ___ _ __ _ _ __ ___  _ __   ___ _ __ | |_ ___  | |__ | |_ _ __ ___ | |
+ / _ \ \/ / '_ \ / _ \ '__| | '_ ` _ \| '_ \ / _ \ '_ \| __/ __| | '_ \| __| '_ ` _ \| |
+|  __/>  <| |_) |  __/ |  | | | | | | | | | |  __/ | | | |_\__ \_| | | | |_| | | | | | |
+ \___/_/\_\ .__/ \___|_|  |_|_| |_| |_|_| |_|\___|_| |_|\__|___(_)_| |_|\__|_| |_| |_|_|
+          | |                                                                           
+          |_|
+
+
+*/
+
+/*Pour la page des expérimentations*/
+
+/*PHRASE D'ACCROCHE*/
+.just {
+  grid-column: 1 / 4;
+  grid-row: 1 / -1; /*Utiliser les valeurs négatives assurent que votre élément occupe toujours la même place peu importe les valeurs de votre grille, ex: dans le cas d'une grille dynamique*/
+  padding-top: 5%;
+}
+
+.just p {
+  font-size: 2em;
+}
+
+/*TEXTE*/
+.introexp { 
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
+
+.experimnents {
+  position: relative; /*Permet que mes éléments prennent en compte les modifications de "placement" que je leur demande en dessous, ici margin*/
+  height: 100px;
+  margin: 5px; /*Elle me permet de venir centrer mes éléments au milieu de la case*/
+  width: 125px;
+  overflow: hidden;
+/*  border: 1px solid red;*/
+}
+
+.container .experimnents figure{
+  width: 100%;
+  height: 100%;
+}
+
+.container .experimnents figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img0 {
+  grid-column: 1 / 4;
+  grid-row: 12 / 13;
+}
+
+
