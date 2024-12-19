@@ -24,6 +24,13 @@ p, h2, li	{
 /*FONT PHRASE D'ACCROCHE*/
 
 @font-face {
+  font-family: 'Imbue_14pt-Light';
+  src: url('../fonts/Imbue_14pt-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*@font-face {
     font-family: 'Agoka-Family';
     src:url('../fonts/Agoka-Family.ttf.woff') format('woff'),
         url('../fonts/Agoka-Family.ttf.svg#Agoka-Family') format('svg'),
@@ -31,19 +38,7 @@ p, h2, li	{
         url('../fonts/Agoka-Family.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
-}
-
-
-/* @font-face {
-    font-family: 'Trickster_Regular';
-    src: url('../fonts/Trickster-Regular.eot');
-  	src: url('../fonts/Trickster-Regular.woff2') format('woff2'),
-       	url('../fonts/Trickster-Regular.woff') format('woff'),
-
-    font-weight: normal;
-    font-style: normal; 
-    } 
-/*Trickster is a typeface by [Jean-Baptiste Morizot](http://jbmorizot.fr/)*/
+}*/
 
 
 /*FONT POUR LE SITE*/
@@ -98,11 +93,11 @@ header ul li{
   font-family: 'Satoshi-Regular';
   cursor: pointer;
 	background-color: #1d1e1c;
-  font-size: 23px;
+  font-size: 18px;
 }
 
 .logo	{
-	height: 23px;
+	height: 18px;
 	width: auto;
 	padding-top: 2px;
 }
@@ -128,7 +123,7 @@ footer ul li {
   font-family: 'Satoshi-Regular';
   cursor: pointer;
 	background-color: #1d1e1c;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 
@@ -205,7 +200,7 @@ a:hover	{
 	text-align: start;
 	padding-top: 4%;
 	font-size: 3.5em;
-  font-family: 'Agoka-Family';
+  font-family: 'Imbue_14pt-Light';
 }
 
 .vie	{
@@ -284,8 +279,9 @@ a:hover	{
 
 .hey p	{
 	text-align: start;
+	padding-top: 4%;
 	font-size: 3.5em;
-  font-family: 'Agoka-Family';
+  font-family: 'Imbue_14pt-Light';
 }
 
 .texte1	{
@@ -342,8 +338,9 @@ a:hover	{
 
 .citation1 p	{
 	text-align: start;
+	padding-top: 4%;
 	font-size: 3.5em;
-  font-family: 'Agoka-Family';
+  font-family: 'Imbue_14pt-Light';
 }
 
 /*IMAGE*/
@@ -836,8 +833,9 @@ a:hover	{
 
 .just p	{
 	text-align: start;
+	padding-top: 4%;
 	font-size: 3.5em;
-  font-family: 'Agoka-Family';
+  font-family: 'Imbue_14pt-Light';
 }
 
 /*TEXTE*/
