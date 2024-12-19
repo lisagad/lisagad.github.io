@@ -170,9 +170,14 @@ h2:hover {
   grid-row: 6 / 7;
 }
 
+.timbre  {
+  grid-column: 2 / 4;
+  grid-row: 7 / 8;
+}
+
 .vide {
   grid-column: 1 / 4;
-  grid-row: 7 / 8;
+  grid-row: 8 / 9;
 /*  background-color: hotpink;*/
 }
 
