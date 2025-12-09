@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 	<meta charset="utf-8">
@@ -7,169 +6,208 @@
 
 	<link rel="stylesheet" type="text/css" href="style/reset.css">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
-			
-	<!-- Ipad portrait -->
-	<link rel="stylesheet"
-			media="screen and (max-width:768px)"
-			href="style/petitereso.css" />
 
-	<link rel="icon" type="image/png" href="image/fivecon.png"> 
-	<!-- Cette propriété me permet de changer le fivecon (=icon qui est dans l'onglet) -->
+   <!-- Fivecon = icone pour onglet navigateur -->
+    <link rel="icon" type="image/png" href="images/other/fivecon.png"> 
 
-
-	<title>Lisa</title>
+	<title>lisa gad'</title>
 
 </head>
 
 <body>
 
-	<!-- MENU -->
+    <!-- Navbar avec liens à gauche et bouton de langue à droite -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html" title="૮꒰ ˶• ༝ •˶꒱ა ♡" data-lang="nav-home">lisa gad'</a></li>
+            <li><a href="who.html" title="( ꩜ ᯅ ꩜;)⁭ ⁭" data-lang="nav-contact">[who ?]</a></li>
+        </ul>
+        
+        <!-- Bouton de langue à droite -->
+        <button onclick="switchLanguage()" class="lang-button" id="lang-button" data-lang="lang-button">[fr/en]</button>
+    </nav>
 
-			<header>
+    <!-- Contenu principal -->
+    <main>
+        <h1 data-lang="main-title">Hi !</h1>
+        <p data-lang="main-intro">Bienvenue sur mon portfolio ⋆˚꩜｡ Voici quelques-uns de mes projets !</p>
+    </main>
 
-			<ul>
-				<a href="index.html">
-					<li>
-						<img class="logo" src="image/logo.png" alt="logo">
-					</li>
-				</a>
+    <!-- Section des projets -->
+    <div class="projects-container">
 
-				<a href="index.html">
-					<li>
-						Index
-					</li>
-				</a>
+        <!-- Flèche gauche -->
+        <button class="arrow left-arrow" onclick="scrollProjects(-1)">←</button>
 
-				<a href="experimnents.html">
-					<li>
-						Expiremnents
-					</li>
-				</a>
+       <!-- Liste des projets -->
+        <div class="projects-list">
 
-				<a href="about.html">
-					<li>
-						About
-					</li>
-				</a>
+            <div class="project-item">
+                <a href="troisiemeexpedition.html" title="ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧">
+                <img src="images/expedition/icone.png" alt="Projet 1" class="project-image">
+                <p class="project-title" data-lang="project1-title">La Troisième Expédition</p>
+                </a>
+            </div>
 
-			</ul>
-			
-		</header>
+            <div class="project-item">
+                <a href="madfest.html" title="ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧">
+                <img src="images/madfest/icone.png" alt="Projet 2" class="project-image">
+                <p class="project-title" data-lang="project2-title">Madfest</p>
+                </a>
+            </div>
 
+            <div class="project-item">
+                <a href="nostalgie.html" title="ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧">
+                <img src="images/nostalgie/icone.png" alt="Projet 3" class="project-image">
+                <p class="project-title" data-lang="project3-title">Nostalgie</p>
+                </a>
+            </div>
 
-	<!-- GALERIE DE PROJET -->
-	<div class="container">
+            <!-- Ajoute autant de projets que nécessaire -->
 
-		<div class="item accroche"> 
-			<p>Welcome to my portfolio! My work is an ongoing exploration, driven by curiosity. I love trying new things and am always searching for fresh ways to innovate. ☺</p> 
-		</div>
+        </div>
 
-		<div class="item vie"> 
-			<a href="vie.html" title="Click to see !">
-				<figure> <img src="image/vie/index.jpg" alt="scan d'une double-page du projet vie citadine"> </figure>
-				<h2>Vie citadine<br>[Sketchbook - 2023_24]</h2> 
-			</a>
-		</div>
+        <!-- Flèche droite -->
+        <button class="arrow right-arrow" onclick="scrollProjects(1)">→</button>
 
-		<div class="item donnees"> 
-			<a href="donnees.html" title="Click to see !">
-				<figure> <img src="image/donnees/index.jpg" alt="scan d'une page du projet données personnelles réalisé avec Gloria Skoro, Ilyes Kacimi et Vita kryzhanivska"> </figure>
-				<h2>Données personnelles<br>[Edition - 2024]</h2> 
-			</a>
-		</div>
-
-		<div class="item reglement"> 
-			<a href="reglement.html" title="Click to see !">
-				<figure> <img src="image/reglement/index.jpg" alt="image du projet réglèment pour les gymnases de Fontenay-le-Fleury"> </figure>
-				<h2>Gymnasium rules<br>[Signage / communication - 2024]<h2> 
-			</a>
-		</div>
-
-		<div class="item catalogue"> 
-			<a href="catalogue.html" title="Click to see !">
-				<figure> <img src="image/catalogue/0.jpg" alt="scan d'une double page du catalague d'artiste"> </figure>
-				<h2>Catalogue d’artiste<br>[Edition - 2024]</h2> 
-			</a>
-		</div>
-
-		<div class="item inauguration"> 
-			<a href="inauguration.html" title="Click to see !">
-				<figure> <img src="image/inauguration/index.jpg" alt="photo de contexte des panneaux réalisé pour l'inaugurationdu Théâtre-cinéma de Fontenay-le-Fleury"> </figure>
-				<h2>Inauguration du Théâtre-cinéma de Fontenay-le-Fleury<br>[Communication - 2024]</h2> 
-			</a>
-		</div>
-
-		<div class="item stenope" title="Click to see !"> 
-			<a href="stenope.html">
-				<figure> <img src="image/stenope/index.jpg" alt="scan des photos prise avec un sténopé"> </figure>
-				<h2>Sténopé<br>[Experimentation – 2024]</h2>
-			</a>
-		</div>
-
-		<div class="item geovelo" title="Click to see !"> 
-			<a href="geovelo.html">
-				<figure> <img src="image/geovelo/8.jpg" alt="image d'un écran de téléphone qui utilise l'application Géovélo"> </figure>
-				<h2>Géovélo<br>[UX / UI Design - 2024]</h2>
-			</a>
-		</div>
-
-		<div class="item timbre" title="Click to see !"> 
-			<a href="timbre.html">
-				<figure> <img src="image/timbre/1.jpg" alt="zoom sur une plaquette de pillule qui forme un personnage de Keith Haring"> </figure>
-				<h2>Museotherapy<br>[Risography - 2024]</h2>
-			</a>
-		</div>
-
-		<div class="item vide"> 
-			<p> </p>
-		</div>
+    </div>
 
 
-		<!-- FOOTER -->
+    <!-- Footer -->
+<footer class="site-footer">
+    <h6>©2025 lisa gad' - Website coded in html, css, and JavaScript</h6>
+</footer>
 
-		<footer>
+    
+    <!-- JavaScript intégré -->
+    <script>
+        // Objet de traduction
+        const translations = {
+            fr: {
+                "nav-home": "lisa gad'",
+                "nav-contact": "[who ?]",
+                "lang-button": "[fr/en]",
 
-			<ul>
+                "main-title": "Hi !",
+                "main-intro": "Bienvenue sur mon portfolio ⋆˚꩜｡ Voici quelques-uns de mes projets !",
 
-				<li>
-					<p>Last Update NOV ©2024</p> 
-				</li>
+                "project1-title": "La Troisième Expédition",
+                "project2-title": "Madfest",
+                "project3-title": "Nostalgie",
+
+                "who-title": "𓆝 𓆟 𓆞 𓆝",
+                "who-description": "Je m’appelle Lisa Gadeaud, et je suis étudiante en double cursus graphisme et numérique à Paris. J’aime expérimenter, faire de la photo, dessiner, jouer aux jeux vidéo (surtout Silent Hill et Alice Madness Returns)… et plein d’autres choses encore. Si jamais tu veux me contacter (n’hésite pas ! >ᴗ< ), tu peux m’écrire à lisa.gadeaud[at]gmail.com ou à @lise.gad.",
+            },
+            en: {
+                "nav-home": "lisa gad'",
+                "nav-contact": "[who ?]",
+                "lang-button": "[en/fr]",
+
+                "main-title": "Hi !",
+                "main-intro": "Welcome to my portfolio ⋆˚꩜｡ Here are some of my projects!",
+
+                "project1-title": "The Third Expedition",
+                "project2-title": "Madfest",
+                "project3-title": "Nostalgia",
+
+                "who-title": "𓆝 𓆟 𓆞 𓆝",
+                "who-description": "My name is Lisa Gadeaud, and I’m a graphic design and digital media student in Paris. I love experimenting, photography, drawing, and playing video games (especially Silent Hill and Alice Madness Returns)… and many other things. If you’d like to contact me (really, feel free! >ᴗ< ), here are my details: lisa.gadeaud[at]gmail.com or @lise.gad.",
+            }
+        };
+
+        // Fonction pour basculer la langue
+        function switchLanguage() {
+            const currentLang = document.documentElement.lang;
+            const newLang = currentLang === 'fr' ? 'en' : 'fr';
+
+            // Met à jour la langue de la page
+            document.documentElement.lang = newLang;
+
+            // Met à jour les textes
+            const elements = document.querySelectorAll('[data-lang]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-lang');
+                element.textContent = translations[newLang][key];
+            });
+        }
+
+        // Fonction pour scroller les projets
+        function scrollProjects(direction) {
+            const list = document.querySelector('.projects-list');
+            const scrollAmount = 320;
+            list.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+
+        // Fonction pour ouvrir la modale "Who?"
+        function openWhoModal() {
+        document.getElementById('who-modal').style.display = 'flex';
+        }
+
+        // Fonction pour fermer la modale "Who?"
+        function closeWhoModal() {
+        document.getElementById('who-modal').style.display = 'none';
+        }
+
+        // Ajoute un écouteur d'événement sur le lien "[who?]" pour ouvrir la modale
+        document.addEventListener('DOMContentLoaded', function() {
+        const whoLink = document.querySelector('[data-lang="nav-contact"]');
+        whoLink.addEventListener('click', function(e) {
+        e.preventDefault(); // Empêche le lien de rediriger
+        openWhoModal();
+    });
+});
 
 
-				<li>
-					<p>Coded by myself in html / css</p> 
-				</li>
 
 
-				<li>
-					<p> 
-						<a href="https://www.instagram.com/lise.gad/" target="_blank" title="Let's talk!">Instagram </a>/
-
-						<a href="mailto:lisa.gadeaud@gmail.com" title="Let's talk!"> Mail </a>/
-
-						<a href="https://www.linkedin.com/in/lisa-gadeaud-873a4527a/" target="_blank" title="Let's talk!"> LinkedIn</a> 
-					</p> 
-				</li>
+    </script>
 
 
-			</ul>
-			
-		</footer>
+<!-- Img Drag & Drop -->
+<!-- Image déplaçable -->
+<img src="images/other/cle.png" alt="Image déplaçable" id="draggable-image" class="draggable-image">
+
+<!-- jQuery -->
+<script src="js/jquery-3.6.4.min.js"></script>
+
+<!-- jQuery UI -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<script src="js/jquery-ui.js"></script>
+
+<script>
+$(document).ready(function() {
+    // Rend l'image déplaçable
+    $("#draggable-image").draggable();
+});
+</script>
 
 
-	</div>
+
+<!-- Fenêtre pop-up "Who?" -->
+<div id="who-modal" class="who-modal">
+    <div class="who-modal-content">
+        <span class="who-close-button" onclick="closeWhoModal()">&times;</span>
+        <div class="who-content-wrapper">
+            <!-- Image à gauche -->
+            <div class="who-image-container">
+                <img src="images/other/id.png" alt="Photo de moi" class="who-image">
+            </div>
+
+            <!-- Texte à droite -->
+            <div class="who-text-container">
+                <h3 data-lang="who-title">𓆝 𓆟 𓆞 𓆝</h3>
+                <p data-lang="who-description">
+                    Je m’appelle Lisa Gadeaud, et je suis étudiante en double cursus graphisme et numérique à Paris. J’aime expérimenter, faire de la photo, dessiner, jouer aux jeux vidéo (surtout Silent Hill et Alice Madness Returns)… et plein d’autres choses encore. Si jamais tu veux me contacter (n’hésite pas ! >ᴗ< ), tu peux m’écrire à <a href="mailto:lisa.gadeaud@gmail.com" title="(๑>◡<๑)">lisa.gadeaud[at]gmail.com</a> ou à <a href="https://www.instagram.com/lise.gad/" target="_blank" title="(๑>◡<๑)">@lise.gad.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
 </body>
-
-<!-- 
-
-INDICATIONS POUR LE PORTFOLIO :
-- Pour les images en portrait dans la galerie projet = format 4 : 5 (8 : 10) + N & B 
-- Pour les images en paysage dans la galerie projet = changer la largeur en 800px + N & B
-=> ATTENTION ne pas appliquer le N & B si la production est principalement en noir & blanc, et qu'elle contient pas touche des couleurs sobre.
-
--->
-
 </html>

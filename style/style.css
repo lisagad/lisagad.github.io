@@ -1,873 +1,414 @@
-/*PROPRIÉTÉS GÉNÉRALES*/
-body 	{
-/*	background-color: #f2f2f2;*/
-	background-color: #1d1e1c;
+/* Ajout des fonts */
+@font-face {
+  font-family: 'montserrat';
+  src: url('../fonts/montserrat/static/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic; /* Corrigé pour correspondre au style de la police */
 }
-
-a 	{
-	text-decoration: none;
-	cursor: pointer;
-	color: inherit;
-}
-
-p, h2, li	{
-	color: #8CB0D3;
-}
-
-*{
-	transition: all 0.5s ease-out;
-}
-
-
-/*TYPOGRAOHIE*/
-
-/*FONT PHRASE D'ACCROCHE*/
 
 @font-face {
-  font-family: 'Imbue_14pt-Light';
-  src: url('../fonts/Imbue_14pt-Light.ttf') format('truetype');
+  font-family: 'relationship_of_melodrame';
+  src: url('../fonts/relationship_of_melodrame/relationship-of-melodrame.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-/*@font-face {
-    font-family: 'Agoka-Family';
-    src:url('../fonts/Agoka-Family.ttf.woff') format('woff'),
-        url('../fonts/Agoka-Family.ttf.svg#Agoka-Family') format('svg'),
-        url('../fonts/Agoka-Family.ttf.eot'),
-        url('../fonts/Agoka-Family.ttf.eot?#iefix') format('embedded-opentype'); 
-    font-weight: normal;
-    font-style: normal;
-}*/
-
-
-/*FONT POUR LE SITE*/
-
-.container p	{
-  font-family: 'Satoshi-Regular';
-  font-size: 16px;
-  line-height: 140%;
+a {
+    text-decoration: none; /* Retire le soulignement */
+    color: inherit; /* Hérite de la couleur du texte parent (optionnel) */
 }
 
-/*SATOSHI*/
-@font-face {
-  font-family: 'Satoshi-Regular';
-  src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
-       url('../fonts/Satoshi-Regular.woff') format('woff'),
-       url('../fonts/Satoshi-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Satoshi-Italic';
-  src: url('../fonts/Satoshi-Italic.woff2') format('woff2'),
-       url('../fonts/Satoshi-Italic.woff') format('woff'),
-       url('../fonts/Satoshi-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-display: swap;
-  font-style: italic;
+a:hover {
+    text-decoration: underline;
 }
 
-
-/*__________________________________________________________*/
-/*MENU / HEADER*/
-header {
-  width: 96vw;
-  height: 30px;
-/*  border: 1px solid orange;*/
-  position: fixed;
-  top: 20px;
-  padding-left: 22px;
-  padding-right: 20px;
-  z-index: 1000; /* Cette propriété permet que mon menu soit toujours au-dessus de tout les éléments de ma page quand un utilisateur scroll. Assure-toi que cette valeur est plus élevée que celle des autres éléments */
+/* Taille des paragraphes */
+p {
+    font-size: 13px;
+    font-family: 'montserrat', sans-serif;
+    line-height: 150%;
 }
 
-header ul	{
-  display: flex;
-  justify-content: start;
-  gap: 3vw;
+/* Taille des titres */
+h1 {
+    font-family: 'relationship_of_melodrame', cursive;
+    font-size: 100px; 
+    margin: 0.5em 0;
 }
 
-header ul li{	
-  font-family: 'Satoshi-Regular';
-  cursor: pointer;
-	background-color: #1d1e1c;
-  font-size: 18px;
+h2 {
+    font-family: 'relationship_of_melodrame', cursive;
+    font-size: 50px; 
+    margin: 0.5em 0;
 }
 
-.logo	{
-	height: 18px;
-	width: auto;
-	padding-top: 2px;
+h3 {
+    font-family: 'relationship_of_melodrame', cursive;
+    font-size: 25px; 
+    margin: 0.5em 0;
+}
+    
+/* Reset et base */
+body {
+    margin: 0;
+    font-family: 'montserrat', sans-serif; /* Police par défaut pour tout le site */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
-/*__________________________________________________________*/
-/*FOOTER*/
-footer {
-  width: 96vw;
-  height: 30px;
-/*  border: 1px solid pink;*/
-  position: fixed;
-  bottom: 20px; /* Affiche le footer en bas de la page */
-  z-index: 1000; /* Assure que le footer reste au-dessus des autres éléments */
+/* Navbar */
+.navbar {
+    background-color: #f8f8f8;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-footer ul {
-  display: flex;
-  justify-content: space-around;
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
 }
-
-footer ul li {
-  font-family: 'Satoshi-Regular';
-  cursor: pointer;
-	background-color: #1d1e1c;
-  font-size: 18px;
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
 }
-
-
-/*__________________________________________________________*/
-
-/*GALERIE DE PROJET*/
-
-/*PROPRIÉTÉS DE MA GRILLE*/
-.container	{
-	width: 96vw; /* vw (et vh pour height) permet que les éléments dans cette unité s'adapte à la taille de l'écran ou onglet*/
-	height: auto; /* La valeur auto permet que la hauteur s'adapte AUTOmatiquement au contenu, si on souhaite on peut utiliser une min-height ou une max-height*/
-/*	border : 3px solid darkolivegreen;*/
-
-	display: grid;
-
-	padding-left: 20px; /*padding = me permet de mettre des espaces à l'intérieur d'un élément, il est le contraire de margin*/
-  padding-right: 20px;
-  padding-top: 70px;
-  position: relative;
-
-	grid-template-columns: repeat(5, 1fr);
-	grid-template-crows: repeat(5, 1fr);
-	gap: 60px 20px; /* gap me permet d'aérer l'intérieur de ma grille, la 1ere valeur c'est pour les lignes (=rows) et la 2eme les colonnes (=columns)*/
-
-	/* ATTENTION -> si votre grille est dimensionnée en pixel, la valeur du gap s'ajoute, ce qui peut amener vos éléments à sortir de votre grille. DONC si votre est en pixel, il faut prendre en compte le gap dans vos calculs*/
-
-	grid-auto-rows: 1fr; /* Cette propritété me permet que lorsque j'ajoute un item, la ligne qui s'ajoute soit de la même dimension que met autres lignes*/
-
-	/* Si jamais je veux que ce soit une colonne qui s'ajoute automatiquement, il faut utiliser la propriété suivante :
-			grid-auto-flow: column;
-			grid-auto-columns: 1fr; */
+/* Bouton de langue (stylisé comme les liens) */
+.lang-button {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0;
+}
+.lang-button:hover {
+    text-decoration: underline;
 }
 
 
-/*__________________________________________________________*/
+/*
 
-/*PROPRIÉTÉS DE MES ITEMS*/
-	figure img {
+   ___              _                
+ /'___)            ( )_              
+| (__   _      _   | ,_)   __   _ __ 
+| ,__)/'_`\  /'_`\ | |   /'__`\( '__)
+| |  ( (_) )( (_) )| |_ (  ___/| |   
+(_)  `\___/'`\___/'`\__)`\____)(_)
+
+*/
+
+
+/* Footer */
+.site-footer {
+    text-align: center; /* Centre le texte */
+    padding: 10px 0; /* Espacement vertical */
+    background-color: transparent; /* Fond transparent (ou une couleur de ton choix) */
+    width: 100%; /* Prend toute la largeur de la page */
+    position: relative; /* Position relative pour le placer sous le contenu */
+    bottom: 0; /* Aligné en bas */
+    margin-top: auto; /* Pousse le footer en bas si le contenu est court */
+}
+
+.site-footer h6 {
+    font-size: 10px; /* Taille de police de 10px */
+    margin: 0; /* Retire les marges par défaut */
+    color: #666; /* Couleur gris clair (ajuste selon ton design) */
+    font-family: 'montserrat', sans-serif; /* Utilise ta police personnalisée */
+    font-weight: normal; /* Épaisseur normale */
+}
+
+
+
+/*
+ _                          
+| |                         
+| |__   ___  _ __ ___   ___ 
+| '_ \ / _ \| '_ ` _ \ / _ \
+| | | | (_) | | | | | |  __/
+|_| |_|\___/|_| |_| |_|\___|
+
+*/
+
+/* Contenu principal */
+main {
+    flex: 1;
+    padding: 6rem 3rem 6rem 3rem; /*gestion de l'espace autour du main*/
+    text-align: left;
+}
+
+/* Section des projets */
+.projects-container {
+    display: flex;
+    align-items: center;
+    margin: 0 2rem 2rem;
+    gap: 1rem;
+}
+.projects-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    padding: 1rem 0;
+    flex: 1;
+}
+.project-item {
+    flex: 0 0 auto;
+    width: 300px;
+}
+.project-image {
     width: 100%;
-    height: auto; /* Pour garder le ratio de l'image */
-    object-fit: cover; /* Pour que l'image remplisse exactement la taille définie sans déformation */
+    height: 230px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.project-title {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #666;
+}
+/* Flèches de navigation */
+.arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+}
+.arrow:hover {
+    color: #000;
 }
 
-h2	{
-	padding-top: 10px;
-  font-family: 'Satoshi-Regular';
-  font-size: 16px;
-  line-height: 140%;
-}
-
-h2:hover {
-  font-family: 'Satoshi-Italic';
-  font-style: italic;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 140%;
-} 
-
-a:hover	{
-	font-style: italic;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-/*JE M'ADRESSE À DES ITEMS SPÉCIFIQUES*/
-.accroche	{
-	grid-column: 1 / 6;
-	grid-row: 1 / -1; /*Utiliser les valeurs négatives assurent que votre élément occupe toujours la même place peu importe les valeurs de votre grille, ex: dans le cas d'une grille dynamique*/
-/*	background-color: darkred;*/
-/*  border: 1px solid darkred;*/
-}
-
-.accroche p	{
-	text-align: start;
-	padding-top: 4%;
-	font-size: 3.5em;
-  font-family: 'Imbue_14pt-Light';
-}
-
-.vie	{
-	grid-column: 1 / 2;
-	grid-row: 2 / 3;
-/*	background-color: green;*/
-}
-
-.donnees	{
-	grid-column: 3 / 4;
-	grid-row: 2 / 3;
-/*	background-color: white;*/
-}
-
-.reglement	{
-	grid-column: 4 / 5;
-	grid-row: 2 / 3;
-/*	background-color: orangered;*/
-}
-
-.catalogue	{
-	grid-column: 2 / 3;
-	grid-row: 3 / 4;
-/*	background-color: yellow;*/
-}
-
-.inauguration	{
-	grid-column: 3 / 4;
-	grid-row: 3 / 4;
-/*	background-color: blueviolet;*/
-}
-
-.stenope	{
-	grid-column: 5 / 6;
-	grid-row: 3 / 4;
-/*	background-color: hotpink;*/
-}
-
-.geovelo	{
-	grid-column: 4 / 5;
-	grid-row: 4 / 5;
-}
-
-.timbre	{
-	grid-column: 2 / 3;
-	grid-row: 4 / 5;
-/*	background-color: hotpink;*/
-}
-
-.vide	{
-	grid-column: 1 / 6;
-	grid-row: 5 / 6;
-/*	background-color: hotpink;*/
+/* Style pour l'image déplaçable */
+.draggable-image {
+    width: 500px; /* Largeur fixe */
+    height: 500px; /* Hauteur fixe */
+    object-fit: cover; /* Conserve les proportions de l'image */
+    position: absolute; /* Nécessaire pour le drag and drop */
+    cursor: move; /* Curseur pour indiquer que l'image est déplaçable */
+    z-index: 10; /* Assure que l'image reste au-dessus des autres éléments */
+    top: 100px; /* Position initiale verticale */
+    left: 920px; /* Position initiale horizontale */
+    border-radius: 5px; /* Optionnel : coins arrondis */
+   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optionnel : ombre légère */
 }
 
 
 /*
-       _                         _                _  
-      | |                  _    | |     _        | | 
- _____| |__   ___  _   _ _| |_  | |__ _| |_ ____ | | 
-(____ |  _ \ / _ \| | | (_   _) |  _ (_   _)    \| | 
-/ ___ | |_) ) |_| | |_| | | |_ _| | | || |_| | | | | 
-\_____|____/ \___/|____/   \__|_)_| |_| \__)_|_|_|\_)
+          _          ___  
+         | |        |__ \ 
+__      _| |__   ___   ) |
+\ \ /\ / / '_ \ / _ \ / / 
+ \ V  V /| | | | (_) |_|  
+  \_/\_/ |_| |_|\___/(_)
 
 */
 
-/*Style pour ce qui concerne la page about.html*/
-
-
-.hey	{
-	grid-column: 1 / 6;
-	grid-row: 1 / -1; /*Utiliser les valeurs négatives assurent que votre élément occupe toujours la même place peu importe les valeurs de votre grille, ex: dans le cas d'une grille dynamique*/
-/*	background-color: darkred;*/
-/*  border: 1px solid darkred;*/
-}
-
-.hey p	{
-	text-align: start;
-	padding-top: 4%;
-	font-size: 3.5em;
-  font-family: 'Imbue_14pt-Light';
-}
-
-.texte1	{
-	grid-column: 2 / 4;
-	grid-row: 2 / 3;
-}
-
-.texte2	{
-	grid-column: 3 / 5;
-	grid-row: 3 / 4;
-}
-
-.texte3	{
-	grid-column: 3 / 5;
-	grid-row: 4 / 5;
-}
-
-.etoile figure img	{
- height: 180px;
- width: auto;
-}
-
-.etoile	{
-	grid-column: 2 / 3;
-	grid-row: 3 / 4;
-}
-
-
-/*
-
-                  _                   _                _  
-                 (_)        _        | |     _        | | 
- ____   ____ ___  _ _____ _| |_  ___ | |__ _| |_ ____ | | 
-|  _ \ / ___) _ \| | ___ (_   _)/___)|  _ (_   _)    \| | 
-| |_| | |  | |_| | | ____| | |_|___ || | | || |_| | | | | 
-|  __/|_|   \___/| |_____)  \__|___(_)_| |_| \__)_|_|_|\_)
-|_|            (__/
-
-*/
-
-/*Pour les pages projets*/
-
-
-/*_____________________________________________________________*/
-/*PROJET = VIE CITADINE*/
-
-/*PHRASE D'ACCROCHE*/
-.citation1	{
-	grid-column: 1 / 6;
-	grid-row: 1 / -1; /*Utiliser les valeurs négatives assurent que votre élément occupe toujours la même place peu importe les valeurs de votre grille, ex: dans le cas d'une grille dynamique*/
-/*	background-color: darkred;*/
-/*  border: 1px solid darkred;*/
-}
-
-.citation1 p	{
-	text-align: start;
-	padding-top: 4%;
-	font-size: 3.5em;
-  font-family: 'Imbue_14pt-Light';
-}
-
-/*IMAGE*/
-.imgvie1	{
-	grid-column: 4 / 6;
-	grid-row: 2 / 3;
-}
-
-.imgvie2	{
-	grid-column: 1 / 3;
-	grid-row: 3 / 4;
-}
-
-.imgvie3	{
-	grid-column: 2 / 4;
-	grid-row: 4 / 5;
-}
-
-.imgvie4	{
-	grid-column: 2 / 4;
-	grid-row: 5 / 6;
-}
-
-/*TEXTE*/
-.vie1	{
-	grid-column: 1 / 2;
-	grid-row: 2 / 3;
-}
-
-.vie2	{
-	grid-column: 3 / 4;
-	grid-row: 3 / 4;
-}
-
-
-/*PROJET SUIVANT*/
-.nextvie	{
-	grid-column: 5 / 6;
-	grid-row: 5 / 6;
-}
-
-.nextvie	p{
-	text-align: end;
-	padding-top: 90%;
-}
-
-
-/*_______________________________________________________________*/
-/*PROJET = DONNÉES PERSONNELLES*/
-
-/*IMAGES*/
-.imgdonnees1	{
-	grid-column: 1 / 2;
-	grid-row: 2 / 3;
-}
-
-.imgdonnees2	{
-	grid-column: 4 / 5;
-	grid-row: 3 / 4;
-}
-
-.imgdonnees3	{
-	grid-column: 5 / 6;
-	grid-row: 3 / 4;
-}
-
-.imgdonnees4	{
-	grid-column: 2 / 3;
-	grid-row: 4 / 5;
-}
-
-.imgdonnees5	{
-	grid-column: 2 / 3;
-	grid-row: 5 / 6;
-}
-
-/*TEXTES*/
-.donnees1	{
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
-}
-
-.donnees2	{
-	grid-column: 3 / 4;
-	grid-row: 3 / 4;
-}
-
-.donnees3	{
-	grid-column: 3 / 4;
-	grid-row: 4 / 5;
-}
-
-
-/*PROJET SUIVANT*/
-.nextdonnees	{
-	grid-column: 5 / 6;
-	grid-row: 5 / 6;
-}
-
-.nextdonnees	p{
-	text-align: end;
-	padding-top: 90%;
-}
-
-
-/*_______________________________________________________________*/
-/*PROJET = RÉGLEMENT GYMNASE*/
-
-/*IMAGES*/
-.imgreglement1	{
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
-}
-
-.imgreglement8	{
-	grid-column: 3 / 4;
-	grid-row: 3 / 4;
-}
-
-.imgreglement2	{
-	grid-column: 1 / 2;
-	grid-row: 4 / 5;
-}
-
-.imgreglement3	{
-	grid-column: 2 / 3;
-	grid-row: 4 / 5;
-}
-
-.imgreglement4	{
-	grid-column: 1 / 2;
-	grid-row: 5 / 6;
-}
-
-.imgreglement5	{
-	grid-column: 2 / 3;
-	grid-row: 5 / 6;
-}
-
-.imgreglement6	{
-	grid-column: 1 / 2;
-	grid-row: 6 / 7;
-}
-
-.imgreglement7	{
-	grid-column: 2 / 3;
-	grid-row: 6 / 7;
-}
-
-/*TEXTES*/
-.reglement1	{
-	grid-column: 3 / 4;
-	grid-row: 2 / 3;
-}
-
-.reglement2	{
-	grid-column: 4 / 5;
-	grid-row: 3 / 4;
-}
-
-.reglement3	{
-	grid-column: 3 / 4;
-	grid-row: 4 / 5;
-}
-
-
-/*PROJET SUIVANT*/
-.nextreglement	{
-	grid-column: 5 / 6;
-	grid-row: 6 / 7;
-}
-
-.nextreglement	p{
-	text-align: end;
-	padding-top: 90%;
-}
-
-
-/*_______________________________________________________________*/
-/*PROJET = CATALOGUE D'ARTISTE*/
-
-/*IMAGES*/
-.imgcatalogue1	{
-	grid-column: 2 / 4;
-	grid-row: 2 / 3;
-}
-
-.imgcatalogue2	{
-	grid-column: 1 / 3;
-	grid-row: 3 / 4;
-}
-
-.imgcatalogue3	{
-	grid-column: 4 / 6;
-	grid-row: 4 / 5;
-}
-
-.imgcatalogue4	{
-	grid-column: 4 / 6;
-	grid-row: 5 / 6;
-}
-
-.imgcatalogue5	{
-	grid-column: 4 / 6;
-	grid-row: 6 / 7;
-}
-
-.imgcatalogue6	{
-	grid-column: 4 / 6;
-	grid-row: 7 / 8;
-}
-
-/*TEXTES*/
-.catalogue1	{
-	grid-column: 4 / 5;
-	grid-row: 2 / 3;
-}
-
-.catalogue2	{
-	grid-column: 3 / 4;
-	grid-row: 3 / 4;
-}
-
-/*PROJET SUIVANT*/
-.nextcatalogue	{
-	grid-column: 5 / 6;
-	grid-row: 8 / 9;
-}
-
-.nextcatalogue	p{
-	text-align: end;
-/*	padding-top: 130%;*/
-}
-
-
-/*_______________________________________________________________*/
-/*PROJET = INAUGURATION*/
-
-/*IMAGES*/
-.imginauguration3	{
-	grid-column: 1 / 3;
-	grid-row: 2 / 3;
-}
-
-.imginauguration1	{
-	grid-column: 2 / 4;
-	grid-row: 3 / 4;
-}
-
-.imginauguration2	{
-	grid-column: 3 / 5;
-	grid-row: 4 / 5;
-}
-
-.imginauguration4	{
-	grid-column: 3 / 5;
-	grid-row: 5 / 6;
-}
-
-/*TEXTES*/
-.inauguration1	{
-	grid-column: 3 / 4;
-	grid-row: 2 / 3;
-}
-
-.inauguration2	{
-	grid-column: 4 / 5;
-	grid-row: 3 / 4;
-}
-
-.inauguration3	{
-	grid-column: 2 / 3;
-	grid-row: 4 / 5;
-}
-
-
-/*PROJET SUIVANT*/
-.nextinauguration	{
-	grid-column: 5 / 6;
-	grid-row: 5 / 6;
-}
-
-.nextinauguration	p{
-	text-align: end;
-	padding-top: 90%;
-}
-
-
-/*_______________________________________________________________*/
-/*PROJET = STENOPE*/
-
-/*IMAGES*/
-.imgstenope1	{
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
-}
-
-.imgstenope2	{
-	grid-column: 2 / 3;
-	grid-row: 4 / 5;
-}
-
-.imgstenope2 img	{
-	height: 400px;
-	width: auto;
-}
-
-.imgstenope3	{
-	grid-column: 3 / 4;
-	grid-row: 4 / 5;
-}
-
-.imgstenope3 img	{
-	height: 400px;
-	width: auto;
-}
-
-.imgstenope4	{
-	grid-column: 5 / 6;
-	grid-row: 3 / 4;
-}
-
-/*TEXTES*/
-.stenope1	{
-	grid-column: 3 / 4;
-	grid-row: 2 / 3;
-}
-
-.stenope2	{
-	grid-column: 4 / 5;
-	grid-row: 3 / 4;
+/* Fenêtre pop-up "Who?" */
+.who-modal {
+    display: none; /* Masquée par défaut */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Conteneur principal de la modale */
+.who-modal-content {
+    width: 900px;
+    max-width: 90%;
+    height: 530px;
+    max-height: 90vh;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Conteneur flexible pour l'image et le texte */
+.who-content-wrapper {
+    display: flex;
+    height: 100%;
+    gap: 2rem;
+}
+
+/* Conteneur de l'image (à gauche) */
+.who-image-container {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Image en format portrait */
+.who-image {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+/* Conteneur du texte (à droite) */
+.who-text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .who-content-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+    .who-image-container {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+/* Bouton de fermeture de la modale (croix) */
+.who-close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; /* Positionne la croix à droite */
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+    z-index: 10; /* Assure que la croix reste au-dessus du contenu */
+}
+
+.who-close-button:hover {
+    color: #333;
 }
 
-/*PROJET SUIVANT*/
-.nextstenope	{
-	grid-column: 5 / 6;
-	grid-row: 4 / 5;
-}
-
-.nextstenope	p{
-	text-align: end;
-	padding-top: 90%;
-}
-
-
-
-/*_______________________________________________________________*/
-/*PROJET = GÉOVÉLO*/
-
-/*IMAGES*/
-.imggeovelo1	{
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
-}
-
-.imggeovelo2	{
-	grid-column: 3 / 4;
-	grid-row: 2 / 3;
-}
-
-.imggeovelo3	{
-	grid-column: 1 / 3;
-	grid-row: 3 / 4;
-}
-
-.imggeovelo4	{
-	grid-column: 3 / 4;
-	grid-row: 4 / 5;
-}
-
-.imggeovelo5	{
-	grid-column: 4 / 5;
-	grid-row: 4 / 5;
-}
-
-.imggeovelo6	{
-	grid-column: 3 / 5;
-	grid-row: 5 / 6;
-}
-
-.imggeovelo7	{
-	grid-column: 3 / 5;
-	grid-row: 6 / 7;
-}
-
-
-
-/*TEXTES*/
-.geovelo1	{
-	grid-column: 4 / 5;
-	grid-row: 2 / 3;
-}
-
-.geovelo2	{
-	grid-column: 3 / 4;
-	grid-row: 3 / 4;
-}
 
-/*PROJET SUIVANT*/
-.nextgeovelo	{
-	grid-column: 5 / 6;
-	grid-row: 6 / 7;
-}
-
-.nextgeovelo	p{
-	text-align: end;
-	padding-top: 90%;
-}
-
-
-
-/*_______________________________________________________________*/
-/*PROJET = TIMBRE*/
-
-/*IMAGES*/
-.imgtimbre1	{
-	grid-column: 2 / 4;
-	grid-row: 3 / 4;
-}
-
-.imgtimbre4	{
-	grid-column: 3 / 5;
-	grid-row: 4 / 5;
-}
-
-.imgtimbre5 {
-	grid-column: 1 / 3;
-	grid-row: 5 / 6;
-}
-
-.imgtimbre2 {
-	grid-column: 1 / 3;
-	grid-row: 6 / 7;
-}
-
-
-
-/*TEXTES*/
-.timbre1	{
-	grid-column: 2 / 4;
-	grid-row: 2 / 3;
-}
-
-.timbre2	{
-	grid-column: 4 / 6;
-	grid-row: 3 / 4;
-}
-
-.timbre3	{
-	grid-column: 3 / 5;
-	grid-row: 5 / 6;
-}
-
-/*PROJET SUIVANT*/
-.nexttimbre	{
-	grid-column: 5 / 6;
-	grid-row: 6 / 7;
-}
-
-.nexttimbre	p{
-	text-align: end;
-	padding-top: 90%;
-}
 
 
 
 /*
-
-                           _                            _         _     _             _ 
-                          (_)                          | |       | |   | |           | |
-  _____  ___ __   ___ _ __ _ _ __ ___  _ __   ___ _ __ | |_ ___  | |__ | |_ _ __ ___ | |
- / _ \ \/ / '_ \ / _ \ '__| | '_ ` _ \| '_ \ / _ \ '_ \| __/ __| | '_ \| __| '_ ` _ \| |
-|  __/>  <| |_) |  __/ |  | | | | | | | | | |  __/ | | | |_\__ \_| | | | |_| | | | | | |
- \___/_/\_\ .__/ \___|_|  |_|_| |_| |_|_| |_|\___|_| |_|\__|___(_)_| |_|\__|_| |_| |_|_|
-          | |                                                                           
-          |_|
-
+______          _      _       
+| ___ \        (_)    | |      
+| |_/ / __ ___  _  ___| |_ ___ 
+|  __/ '__/ _ \| |/ _ \ __/ __|
+| |  | | | (_) | |  __/ |_\__ \
+\_|  |_|  \___/| |\___|\__|___/
+              _/ |             
+             |__/
 
 */
 
-/*Pour la page des expérimentations*/
-
-/*PHRASE D'ACCROCHE*/
-.just	{
-	grid-column: 1 / 6;
-	grid-row: 1 / -1; /*Utiliser les valeurs négatives assurent que votre élément occupe toujours la même place peu importe les valeurs de votre grille, ex: dans le cas d'une grille dynamique*/
-/*	background-color: darkred;*/
-/*  border: 1px solid darkred;*/
+/* Page projet : contenu principal à gauche */
+.project-main {
+    flex: 1;
+    padding: 6rem 3rem 6rem 3rem; /*gestion de l'espace autour du main*/
+    text-align: left;
+    max-width: 50%;
 }
 
-.just p	{
-	text-align: start;
-	padding-top: 4%;
-	font-size: 3.5em;
-  font-family: 'Imbue_14pt-Light';
+/* Conteneur pour l'image agrandie */
+.project-large-image-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
-/*TEXTE*/
-.introexp	{	
-	grid-column: 1 / 6;
-	grid-row: 2 / 3;
+.project-large-image {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
 }
 
-.experimnents {
-	position: relative; /*Permet que mes éléments prennent en compte les modifications de "placement" que je leur demande en dessous, ici margin*/
-	height: 200px;
-	margin: 10px; /*Elle me permet de venir centrer mes éléments au milieu de la case*/
-	width: 250px;
-	overflow: hidden;
-/*	border: 1px solid red;*/
+.project-close-button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
-.container .experimnents figure{
-	width: 100%;
-	height: 100%;
+/* Flèches de navigation pour les images agrandies */
+.project-nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 50%;
+    z-index: 1001;
 }
 
-.container .experimnents figure img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+.left-large-arrow {
+    left: 2rem;
 }
 
-.img0	{
-	grid-column: 1 / 2;
-	grid-row: 8 / 9;
+.right-large-arrow {
+    right: 2rem;
+}
+
+.project-nav-arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
 
 
+/* Section des projets (page projet) */
+.project-projects-container {
+    display: flex;
+    align-items: center;
+    margin: 0 2rem 2rem;
+    gap: 1rem;
+}
 
+.project-projects-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    padding: 1rem 0;
+    flex: 1;
+}
+
+.project-project-item {
+    flex: 0 0 auto;
+    width: auto; /* Largeur libre pour les images */
+}
+
+/* Vignettes des projets (page projet) */
+.project-project-image {
+    height: 230px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 4px;
+}

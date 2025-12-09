@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+
+   <!-- Fivecon = icone pour onglet navigateur -->
+    <link rel="icon" type="image/png" href="images/other/guitare.png">
+
+    <title>Madfest</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html" title="૮꒰ ˶• ༝ •˶꒱ა ♡" data-lang="nav-home">lisa gad'</a></li>
+            <li><a href="who.html" title="( ꩜ ᯅ ꩜;)⁭ ⁭" data-lang="nav-contact">[who ?]</a></li>
+        </ul>
+
+        <!-- Bouton de langue -->
+        <button onclick="switchLanguage()" class="lang-button" id="lang-button" data-lang="lang-button">[fr/en]</button>
+    </nav>
+
+    <!-- Contenu principal à gauche -->
+    <main class="project-main">
+        <h2 data-lang="project-title">Madfest</h2>
+        <p data-lang="project-description">Madfest est un festival de musique fictif imaginé dans le cadre d’un workshop dirigé par Robin Abreu. Ce projet est centré sur la typographie, avec pour objectif de promouvoir le festival et les artistes qui y performeraient.</p>
+    </main>
+
+    <!-- Section des projets (scroll) -->
+    <div class="project-projects-container">
+
+        <!-- Flèche gauche -->
+        <button class="arrow left-arrow" onclick="scrollProjects(-1)">←</button>
+
+        <!-- Liste des projets -->
+        <div class="project-projects-list">
+
+            <div class="project-project-item">
+                <img src="images/madfest/1.jpeg" alt="Projet 1" class="project-project-image" onclick="showLargeImage(this.src)">
+            </div>
+
+            <div class="project-project-item">
+                <img src="images/madfest/2.jpeg" alt="Projet 2" class="project-project-image" onclick="showLargeImage(this.src)">
+            </div>
+
+            <div class="project-project-item">
+                <img src="images/madfest/3.jpeg" alt="Projet 3" class="project-project-image" onclick="showLargeImage(this.src)">
+            </div>
+
+            <div class="project-project-item">
+                <img src="images/madfest/4.jpeg" alt="Projet 3" class="project-project-image" onclick="showLargeImage(this.src)">
+            </div>
+
+            <div class="project-project-item">
+                <img src="images/madfest/5.jpeg" alt="Projet 3" class="project-project-image" onclick="showLargeImage(this.src)">
+            </div>
+
+            <div class="project-project-item">
+                <img src="images/madfest/6.jpeg" alt="Projet 3" class="project-project-image" onclick="showLargeImage(this.src)">
+            </div>
+
+            <div class="project-project-item">
+                <img src="images/madfest/7.jpeg" alt="Projet 3" class="project-project-image" onclick="showLargeImage(this.src)">
+            </div>
+
+            <div class="project-project-item">
+                <img src="images/madfest/8.jpeg" alt="Projet 3" class="project-project-image" onclick="showLargeImage(this.src)">
+            </div>
+
+            <div class="project-project-item">
+                <img src="images/madfest/9.jpeg" alt="Projet 3" class="project-project-image" onclick="showLargeImage(this.src)">
+            </div>
+
+        </div>
+
+        <!-- Flèche droite -->
+        <button class="arrow right-arrow" onclick="scrollProjects(1)">→</button>
+    </div>
+
+    <!-- Zone pour afficher l'image en grand -->
+    <div id="large-image-container" class="project-large-image-container">
+    <img id="large-image" class="project-large-image" alt="Image agrandie">
+    <button class="project-close-button" onclick="closeLargeImage()">✕</button>
+
+    <!-- Flèches de navigation pour les images agrandies -->
+    <button class="project-nav-arrow left-large-arrow" onclick="navigateLargeImage(-1)">←</button>
+    <button class="project-nav-arrow right-large-arrow" onclick="navigateLargeImage(1)">→</button>
+</div>
+
+
+<footer class="site-footer">
+    <h6>©2025 lisa gad' - Website coded in html, css, and JavaScript</h6>
+</footer>
+
+
+    <!-- JavaScript intégré -->
+   <script>
+
+    // Tableau des URLs des images (à adapter avec tes images)
+    const largeImages = [
+        "images/madfest/1.jpeg",
+        "images/madfest/2.jpeg",
+        "images/madfest/3.jpeg",
+        "images/madfest/4.jpeg",
+        "images/madfest/5.jpeg",
+        "images/madfest/6.jpeg",
+        "images/madfest/7.jpeg",
+        "images/madfest/8.jpeg",
+        "images/madfest/9.jpeg",
+    ];
+    let currentImageIndex = 0; // Index de l'image actuellement affichée
+
+    // Objet de traduction
+    const translations = {
+        fr: {
+            "nav-home": "lisa gad'",
+            "nav-contact": "[who ?]",
+            "lang-button": "[fr/en]",
+
+            "project-title": "Madfest",
+            "project-description": "Madfest est un festival de musique fictif imaginé dans le cadre d’un workshop dirigé par Robin Abreu. Ce projet est centré sur la typographie, avec pour objectif de promouvoir le festival et les artistes qui y performeraient.",
+
+            "who-title": "𓆝 𓆟 𓆞 𓆝",
+            "who-description": "Je m’appelle Lisa Gadeaud, et je suis étudiante en double cursus graphisme et numérique à Paris. J’aime expérimenter, faire de la photo, dessiner, jouer aux jeux vidéo (surtout Silent Hill et Alice Madness Returns)… et plein d’autres choses encore. Si jamais tu veux me contacter (n’hésite pas ! >ᴗ< ), tu peux m’écrire à lisa.gadeaud[at]gmail.com ou à @lise.gad.",
+        },
+        en: {
+            "nav-home": "lisa gad'",
+            "nav-contact": "[who ?]",
+            "lang-button": "[en/fr]",
+
+            "project-title": "Madfest",
+            "project-description": "Madfest is a fictional music festival created during a workshop led by Robin Abreu. This project focuses on typography, with the goal of promoting the festival and the artists who would perform there.",
+
+            "who-title": "𓆝 𓆟 𓆞 𓆝",
+            "who-description": "My name is Lisa Gadeaud, and I’m a graphic design and digital media student in Paris. I love experimenting, photography, drawing, and playing video games (especially Silent Hill and Alice Madness Returns)… and many other things. If you’d like to contact me (really, feel free! >ᴗ< ), here are my details: lisa.gadeaud[at]gmail.com or @lise.gad.",
+        }
+        
+    };
+
+    // Fonction pour afficher une image en grand
+    function showLargeImage(src) {
+        const container = document.getElementById('large-image-container');
+        const largeImage = document.getElementById('large-image');
+        largeImage.src = src;
+        currentImageIndex = largeImages.indexOf(src); // Met à jour l'index
+        container.style.display = 'flex';
+    }
+
+    // Fonction pour naviguer entre les images agrandies
+    function navigateLargeImage(direction) {
+        currentImageIndex += direction;
+        // Gestion des limites du tableau (navigation circulaire)
+        if (currentImageIndex < 0) currentImageIndex = largeImages.length - 1;
+        if (currentImageIndex >= largeImages.length) currentImageIndex = 0;
+        // Met à jour l'image affichée
+        document.getElementById('large-image').src = largeImages[currentImageIndex];
+    }
+
+    // Fonction pour fermer l'image agrandie
+    function closeLargeImage() {
+        document.getElementById('large-image-container').style.display = 'none';
+    }
+
+    // Fonction pour scroller les projets
+    function scrollProjects(direction) {
+        const list = document.querySelector('.project-projects-list');
+        const scrollAmount = 320;
+        list.scrollBy({
+            left: direction * scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+
+    // Fonction pour basculer la langue
+    function switchLanguage() {
+        const currentLang = document.documentElement.lang;
+        const newLang = currentLang === 'fr' ? 'en' : 'fr';
+        document.documentElement.lang = newLang;
+
+        // Met à jour les textes traduits
+        const elements = document.querySelectorAll('[data-lang]');
+        elements.forEach(element => {
+            const key = element.getAttribute('data-lang');
+            element.textContent = translations[newLang][key];
+        });
+    }
+
+    // Fonction pour ouvrir la modale "Who?"
+    function openWhoModal() {
+    document.getElementById('who-modal').style.display = 'flex';
+    }
+
+    // Fonction pour fermer la modale "Who?"
+    function closeWhoModal() {
+    document.getElementById('who-modal').style.display = 'none';
+    }
+
+    // Ajoute un écouteur d'événement sur le lien "[who?]" pour ouvrir la modale
+    document.addEventListener('DOMContentLoaded', function() {
+    const whoLink = document.querySelector('[data-lang="nav-contact"]');
+    whoLink.addEventListener('click', function(e) {
+        e.preventDefault(); // Empêche le lien de rediriger
+        openWhoModal();
+    });
+});
+
+</script>
+
+<!-- Fenêtre pop-up "Who?" -->
+<div id="who-modal" class="who-modal">
+    <div class="who-modal-content">
+        <span class="who-close-button" onclick="closeWhoModal()">&times;</span>
+        <div class="who-content-wrapper">
+            <!-- Image à gauche -->
+            <div class="who-image-container">
+                <img src="images/other/id.png" alt="Photo de moi" class="who-image">
+            </div>
+
+            <!-- Texte à droite -->
+            <div class="who-text-container">
+                <h3 data-lang="who-title">𓆝 𓆟 𓆞 𓆝</h3>
+                <p data-lang="who-description">
+                    Je m’appelle Lisa Gadeaud, et je suis étudiante en double cursus graphisme et numérique à Paris. J’aime expérimenter, faire de la photo, dessiner, jouer aux jeux vidéo (surtout Silent Hill et Alice Madness Returns)… et plein d’autres choses encore. Si jamais tu veux me contacter (n’hésite pas ! >ᴗ< ), tu peux m’écrire à <a href="mailto:lisa.gadeaud@gmail.com" title="(๑>◡<๑)">lisa.gadeaud[at]gmail.com</a> ou à <a href="https://www.instagram.com/lise.gad/" target="_blank" title="(๑>◡<๑)">@lise.gad.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
