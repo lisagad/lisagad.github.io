@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +11,7 @@
    <!-- Favicon = icone pour onglet navigateur -->
     <link rel="icon" type="image/png" href="images/other/candle.png"> 
 
-	<title>lisa gad'</title>
+	<title>Work</title>
 
 </head>
 
@@ -21,72 +22,65 @@
         <ul class="nav-links">
             <li><a href="index.html" title="૮꒰ ˶• ༝ •˶꒱ა ♡" data-lang="nav-home">lisa gad'</a></li>
             <li><a href="who.html" title="( ꩜ ᯅ ꩜;)⁭ ⁭" data-lang="nav-contact">[who ?]</a></li>
-             <li><a href="work.html" title="( ꩜ ᯅ ꩜;)⁭ ⁭" data-lang="nav-work">[work]</a></li>
+            <li><a href="work.html" title="( ꩜ ᯅ ꩜;)⁭ ⁭" data-lang="nav-work">[work]</a></li>
         </ul>
         
         <!-- Bouton de langue à droite -->
         <button onclick="switchLanguage()" class="lang-button" id="lang-button" data-lang="lang-button">[fr/en]</button>
     </nav>
 
-    <!-- Contenu principal -->
-    <main>
-        <h1 data-lang="main-title">Hi !</h1>
-        <p data-lang="main-intro">Bienvenue sur mon portfolio ⋆˚꩜｡ Voici quelques-uns de mes projets !</p>
-    </main>
 
-    <!-- Section des projets -->
-    <div class="projects-container">
+<!-- Contenu principal -->
+<main class="work-main">
+    <h1 data-lang="work-title">Tous mes projets</h1>
+    <div class="work-content">
 
-        <!-- Flèche gauche -->
-        <button class="arrow left-arrow" onclick="scrollProjects(-1)">←</button>
+        <!-- Liste des projets à gauche -->
+        <div class="work-list-container">
+            <ul class="work-list">
 
-       <!-- Liste des projets -->
-        <div class="projects-list">
+                <li class="work-item">
+                    <a href="memoire.html" title="ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧">
+                        <span class="work-item-title" data-lang="project4-title">[2026] Design & automatisation</span>
+                    </a>
+                </li>
 
-            <!-- Ajouter les nouveaux projets en tête de liste ! -->
-            <div class="project-item">
-                <a href="memoire.html" title="ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧">
-                <img src="images/memoire/icone.png" alt="Projet 4" class="project-image">
-                <p class="project-title" data-lang="project4-title">Design & automatisation</p>
-                </a>
-            </div>
+                <li class="work-item">
+                    <a href="nostalgie.html" title="ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧">
+                        <span class="work-item-title" data-lang="project3-title">[2025] Nostalgie</span>
+                    </a>
+                </li>
 
-            <div class="project-item">
-                <a href="nostalgie.html" title="ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧">
-                <img src="images/nostalgie/icone.png" alt="Projet 3" class="project-image">
-                <p class="project-title" data-lang="project3-title">Nostalgie</p>
-                </a>
-            </div>
+                <li class="work-item">
+                    <a href="madfest.html" title="ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧">
+                        <span class="work-item-title" data-lang="project2-title">[2025] Madfest</span>
+                    </a>
+                </li>
 
-            <div class="project-item">
-                <a href="madfest.html" title="ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧">
-                <img src="images/madfest/icone.png" alt="Projet 2" class="project-image">
-                <p class="project-title" data-lang="project2-title">Madfest</p>
-                </a>
-            </div>
+                <li class="work-item">
+                    <a href="troisiemeexpedition.html" title="ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧">
+                        <span class="work-item-title" data-lang="project1-title">[2025] La Troisième Expédition</span>
+                    </a>
+                </li>
 
-            <div class="project-item">
-                <a href="troisiemeexpedition.html" title="ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧">
-                <img src="images/expedition/icone.png" alt="Projet 1" class="project-image">
-                <p class="project-title" data-lang="project1-title">La Troisième Expédition</p>
-                </a>
-            </div>
-
+            </ul>
         </div>
 
-        <!-- Flèche droite -->
-        <button class="arrow right-arrow" onclick="scrollProjects(1)">→</button>
-
+        <!-- GIF à droite -->
+        <div class="work-gif-container">
+            <img src="images/other/hello.gif" alt="GIF animé" class="work-gif">
+        </div>
     </div>
+</main>
 
 
     <!-- Footer -->
-<footer class="site-footer">
-    <h6>©2025 lisa gad' - Website coded in html, css, and JavaScript</h6>
-</footer>
+    <footer class="site-footer">
+        <h6>©2025 lisa gad' - Website coded in html, css, and JavaScript</h6>
+    </footer>
 
-    
-    <!-- JavaScript intégré -->
+
+    <!-- JavaScript -->
     <script>
         // Objet de traduction
         const translations = {
@@ -96,37 +90,35 @@
                 "nav-work": "[work]",
                 "lang-button": "[fr/en]",
 
-                "main-title": "Hi !",
-                "main-intro": "Bienvenue sur mon portfolio ⋆˚꩜｡ Voici quelques-uns de mes projets !",
-
-                "project1-title": "La Troisième Expédition",
-                "project2-title": "Madfest",
-                "project3-title": "Nostalgie",
-                "project4-title": "Design & automatisation",
+                "work-title": "Tous mes projets",
+                "project1-title": "[2025] La Troisième Expédition",
+                "project2-title": "[2025] Madfest",
+                "project3-title": "[2025] Nostalgie",
+                "project4-title": "[2026] Design & automatisation",
 
                 "who-title": "𓆝 𓆟 𓆞 𓆝",
                 "who-description": "Je m’appelle Lisa Gadeaud, et je suis étudiante en double cursus graphisme et numérique à Paris. J’aime expérimenter, faire de la photo, dessiner, jouer aux jeux vidéo (surtout Silent Hill et Alice Madness Returns)… et plein d’autres choses encore. Si jamais tu veux me contacter (n’hésite pas ! >ᴗ< ), tu peux m’écrire à lisa.gadeaud[at]gmail.com ou à @lise.gad.",
             },
+
             en: {
                 "nav-home": "lisa gad'",
                 "nav-contact": "[who ?]",
                 "nav-work": "[work]",
-                "lang-button": "[en/fr]",
+                "lang-button": "[fr/en]",
 
-                "main-title": "Hi !",
-                "main-intro": "Welcome to my portfolio ⋆˚꩜｡ Here are some of my projects!",
-
-                "project1-title": "The Third Expedition",
-                "project2-title": "Madfest",
-                "project3-title": "Nostalgia",
-                "project4-title": "Design & automation",
+                "work-title": "All my projects",
+                "project1-title": "[2025] The Third Expedition",
+                "project2-title": "[2025] Madfest",
+                "project3-title": "[2025] Nostalgia",
+                "project4-title": "[2026] Design & automation",
 
                 "who-title": "𓆝 𓆟 𓆞 𓆝",
                 "who-description": "My name is Lisa Gadeaud, and I’m a graphic design and digital media student in Paris. I love experimenting, photography, drawing, and playing video games (especially Silent Hill and Alice Madness Returns)… and many other things. If you’d like to contact me (really, feel free! >ᴗ< ), here are my details: lisa.gadeaud[at]gmail.com or @lise.gad.",
             }
         };
 
-        // Fonction pour basculer la langue
+
+                // Fonction pour basculer la langue
         function switchLanguage() {
             const currentLang = document.documentElement.lang;
             const newLang = currentLang === 'fr' ? 'en' : 'fr';
@@ -142,15 +134,6 @@
             });
         }
 
-        // Fonction pour scroller les projets
-        function scrollProjects(direction) {
-            const list = document.querySelector('.projects-list');
-            const scrollAmount = 320;
-            list.scrollBy({
-                left: direction * scrollAmount,
-                behavior: 'smooth'
-            });
-        }
 
         // Fonction pour ouvrir la modale "Who?"
         function openWhoModal() {
@@ -171,30 +154,7 @@
     });
 });
 
-
-
-
     </script>
-
-
-<!-- Img Drag & Drop -->
-<!-- Image déplaçable -->
-<img src="images/other/cle.png" alt="Image déplaçable" id="draggable-image" class="draggable-image">
-
-<!-- jQuery -->
-<script src="js/jquery-3.6.4.min.js"></script>
-
-<!-- jQuery UI -->
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-<script src="js/jquery-ui.js"></script>
-
-<script>
-$(document).ready(function() {
-    // Rend l'image déplaçable
-    $("#draggable-image").draggable();
-});
-</script>
-
 
 
 <!-- Fenêtre pop-up "Who?" -->
@@ -217,7 +177,6 @@ $(document).ready(function() {
         </div>
     </div>
 </div>
-
 
 
 </body>

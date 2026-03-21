@@ -78,7 +78,7 @@ body {
     color: #333;
     font-size: 0.95rem;
 }
-/* Bouton de langue (stylisé comme les liens) */
+/* Bouton de langue */
 .lang-button {
     background: none;
     border: none;
@@ -196,8 +196,6 @@ main {
     z-index: 10; /* Assure que l'image reste au-dessus des autres éléments */
     top: 100px; /* Position initiale verticale */
     left: 920px; /* Position initiale horizontale */
-    border-radius: 5px; /* Optionnel : coins arrondis */
-   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optionnel : ombre légère */
 }
 
 
@@ -302,6 +300,73 @@ __      _| |__   ___   ) |
 
 
 
+/*
+
+                    _    
+                   | |   
+__      _____  _ __| | __
+\ \ /\ / / _ \| '__| |/ /
+ \ V  V / (_) | |  |   < 
+  \_/\_/ \___/|_|  |_|\_\
+
+*/
+
+.work-main {
+    flex: 1;
+    padding: 6rem 3rem 6rem 3rem;
+    text-align: left;
+}
+
+.work-content {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.work-list-container {
+    flex: 1;
+    max-width: 60%; /* Ajuste la largeur de la liste */
+}
+
+.work-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.work-item {
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.work-item-title {
+    font-family: 'montserrat', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.work-item-title:hover {
+    text-decoration: underline;
+}
+
+/* Conteneur du GIF */
+.work-gif-container {
+    flex: 0 0 30%; /* Largeur fixe pour le conteneur */
+    display: flex;
+    justify-content: center; /* Centre le GIF horizontalement */
+    align-items: flex-start; /* Aligne en haut */
+    padding-left: 2rem; /* Espace entre la liste et le GIF */
+    position: sticky;
+}
+
+.work-gif {
+    width: 100%; /* Prend toute la largeur du conteneur */
+    max-width: 250px; /* Taille maximale */
+    height: auto; /* Garde les proportions */
+}
+
+
 
 
 /*
@@ -338,9 +403,10 @@ ______          _      _
     z-index: 1000;
 }
 
+/* Taiile des images quand on clique dessus pour les avoir en grand */
 .project-large-image {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 55%;
+    max-height: 55%;
     object-fit: contain;
 }
 
@@ -410,5 +476,5 @@ ______          _      _
     height: 230px;
     width: auto;
     object-fit: cover;
-    border-radius: 4px;
+    /* border-radius: 4px; */
 }

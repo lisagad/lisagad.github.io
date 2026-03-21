@@ -10,13 +10,8 @@
     <!-- Ipad portrait -->
     <link rel="stylesheet" media="screen and (max-width:768px)" href="style/petitereso.css" />
 
-     <!-- Mettre une image en favicon
-	<link rel="icon" type="image/png" href="image/favicon.png"> 
-    -->
-
-    <!-- Si on téléchargé un fichier en .ico
-	<link rel="icon" type="image/x-icon" href="images/favicon.ico"> 
-    -->
+    <!-- Favicon = icone pour onglet navigateur -->
+    <link rel="icon" type="image/png" href="images/other/livre.png"> 
 
 
     <title>Projet</title>
@@ -28,7 +23,7 @@
         <ul class="nav-links">
             <li><a href="index.html" title="૮꒰ ˶• ༝ •˶꒱ა ♡" data-lang="nav-home">lisa gad'</a></li>
             <li><a href="who.html" title="( ꩜ ᯅ ꩜;)⁭ ⁭" data-lang="nav-contact">[who ?]</a></li>
-            <li><a href="work.html" title="( ꩜ ᯅ ꩜;)⁭ ⁭" data-lang="nav-work">[work]</a></li>
+             <li><a href="work.html" title="( ꩜ ᯅ ꩜;)⁭ ⁭" data-lang="nav-work">[work]</a></li>
         </ul>
 
         <!-- Bouton de langue -->
@@ -37,8 +32,8 @@
 
     <!-- Contenu principal à gauche -->
     <main class="project-main">
-        <h2 data-lang="project-title">Titre du projet</h2>
-        <p data-lang="project-description">Description du projet sélectionnée.</p>
+        <h2 data-lang="project-title">Design & automatisation</h2>
+        <p data-lang="project-description">«Ballotté, manipulé, automatisé, l’homme perd peu à peu la notion de son être.» Vaclav Havel (1936–2011), dramaturge et figure politique tchèque. Pour ma dernière année de DN MADE Graphisme & Numérique, j’ai réalisé mon mémoire de fin d’études sur l’automatisation du métier de designer graphique. J’y explore la manière dont l’automatisation, à la fois mécanique et psychologique, impacte la chaîne de création, mais aussi notre rapport à l’acte de créer. Au-delà du rendu PDF, le mémoire devait également prendre la forme d’une édition. J’ai donc choisi de travailler autour de la notion de série en réalisant trois versions du mémoire, chacune avec une typographie de titrage différente. L’objectif était que chaque édition possède sa propre identité tout en faisant partie d’un ensemble cohérent, explorant ainsi les notions de série et de singularité.</p>
     </main>
 
     <!-- Section des projets (scroll) -->
@@ -51,19 +46,31 @@
         <div class="project-projects-list">
 
             <div class="project-project-item">
-                <img src="images/test4.jpg" alt="Projet 1" class="project-project-image" onclick="showLargeImage(this.src)">
+                <img src="images/memoire/1.jpg" alt="Projet 1" class="project-project-image" onclick="showLargeImage(this.src)">
             </div>
 
             <div class="project-project-item">
-                <img src="images/test2.jpg" alt="Projet 2" class="project-project-image" onclick="showLargeImage(this.src)">
+                <img src="images/memoire/2.jpg" alt="Projet 2" class="project-project-image" onclick="showLargeImage(this.src)">
             </div>
 
             <div class="project-project-item">
-                <img src="images/test3.jpg" alt="Projet 3" class="project-project-image" onclick="showLargeImage(this.src)">
+                <img src="images/memoire/3.jpg" alt="Projet 3" class="project-project-image" onclick="showLargeImage(this.src)">
             </div>
 
             <div class="project-project-item">
-                <img src="images/test5.jpg" alt="Projet 3" class="project-project-image" onclick="showLargeImage(this.src)">
+                <img src="images/memoire/4.jpg" alt="Projet 3" class="project-project-image" onclick="showLargeImage(this.src)">
+            </div>
+
+            <div class="project-project-item">
+                <img src="images/memoire/5.jpg" alt="Projet 3" class="project-project-image" onclick="showLargeImage(this.src)">
+            </div>
+
+            <div class="project-project-item">
+                <img src="images/memoire/6.jpg" alt="Projet 3" class="project-project-image" onclick="showLargeImage(this.src)">
+            </div>
+
+            <div class="project-project-item">
+                <img src="images/memoire/7.jpg" alt="Projet 3" class="project-project-image" onclick="showLargeImage(this.src)">
             </div>
 
         </div>
@@ -94,9 +101,13 @@
 
     // Tableau des URLs des images (pour afficher les images en grand)
     const largeImages = [
-        "images/test1.jpg",
-        "images/test2.jpg",
-        "images/test3.jpg"
+        "images/memoire/1.jpg",
+        "images/memoire/2.jpg",
+        "images/memoire/3.jpg",
+        "images/memoire/4.jpg",
+        "images/memoire/5.jpg",
+        "images/memoire/6.jpg",
+        "images/memoire/7.jpg",
     ];
     let currentImageIndex = 0; // Index de l'image actuellement affichée
 
@@ -108,8 +119,8 @@
             "nav-work": "[work]",
             "lang-button": "[fr/en]",
 
-            "project-title": "Titre du projet",
-            "project-description": "Description du projet sélectionnée.",
+            "project-title": "Design & automatisation",
+            "project-description": "«Ballotté, manipulé, automatisé, l’homme perd peu à peu la notion de son être.» Vaclav Havel (1936–2011), dramaturge et figure politique tchèque. Pour ma dernière année de DN MADE Graphisme & Numérique, j’ai réalisé mon mémoire de fin d’études sur l’automatisation du métier de designer graphique. J’y explore la manière dont l’automatisation, à la fois mécanique et psychologique, impacte la chaîne de création, mais aussi notre rapport à l’acte de créer. Au-delà du rendu PDF, le mémoire devait également prendre la forme d’une édition. J’ai donc choisi de travailler autour de la notion de série en réalisant trois versions du mémoire, chacune avec une typographie de titrage différente. L’objectif était que chaque édition possède sa propre identité tout en faisant partie d’un ensemble cohérent, explorant ainsi les notions de série et de singularité.",
 
             "who-title": "𓆝 𓆟 𓆞 𓆝",
             "who-description": "Je m’appelle Lisa Gadeaud, et je suis étudiante en double cursus graphisme et numérique à Paris. J’aime expérimenter, faire de la photo, dessiner, jouer aux jeux vidéo (surtout Silent Hill et Alice Madness Returns)… et plein d’autres choses encore. Si jamais tu veux me contacter (n’hésite pas ! >ᴗ< ), tu peux m’écrire à lisa.gadeaud[at]gmail.com ou à @lise.gad.",
@@ -120,8 +131,8 @@
             "nav-work": "[work]",
             "lang-button": "[en/fr]",
 
-            "project-title": "Project Title",
-            "project-description": "Selected project description.",
+            "project-title": "Design & automation",
+            "project-description": "“Battered, manipulated, automated, human beings gradually lose the sense of who they are.” Václav Havel (1936–2011), Czech playwright and political figure. For my final year in DN MADE Graphic Design & Digital, I wrote my graduation dissertation on the automation of the graphic designer’s profession. In this work, I explore how mechanical and psychological automation affect the creative process, as well as our relationship to creation itself. Beyond the PDF version, the dissertation also had to be designed as a physical edition. I chose to work with the idea of a series by creating three versions of the dissertation, each with its own display typography. The goal was for each edition to have its own identity while still being part of a whole, exploring the ideas of series and singularity.",
 
             "who-title": "𓆝 𓆟 𓆞 𓆝",
             "who-description": "My name is Lisa Gadeaud, and I’m a graphic design and digital media student in Paris. I love experimenting, photography, drawing, and playing video games (especially Silent Hill and Alice Madness Returns)… and many other things. If you’d like to contact me (really, feel free! >ᴗ< ), here are my details: lisa.gadeaud[at]gmail.com or @lise.gad.",
