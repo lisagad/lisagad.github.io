@@ -478,3 +478,23 @@ ______          _      _
     object-fit: cover;
     /* border-radius: 4px; */
 }
+
+/* Ornement en arrière plan */
+.container-ornement {
+    position: fixed;
+    right: 12%; /* modifier la distance entre l'image et le bord droit */
+    top: 47%; /* Modifier la position verticale de l'image */
+    transform: translateY(-50%); /* Centre verticalement */
+    width: 400px; /* Taille de l'image */
+    height: 500px;
+    z-index: -1; /* Pour que l'image soit en arrière-plan */
+    pointer-events: none;
+}
+
+.container-ornement img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Garde les proportions sans déformation */
+    opacity: 0.7;
+}
+
